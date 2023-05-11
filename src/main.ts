@@ -6,9 +6,17 @@ import router from './router'
 
 import './assets/main.css'
 
+// Vuetify
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
+import vuetifyConfig from '@/vuetifyConfig'
+
+const vuetify = createVuetify(vuetifyConfig)
+
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+app.use(vuetify)
 
 app.mount('#app')
