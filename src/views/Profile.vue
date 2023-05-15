@@ -30,9 +30,9 @@ import paul from '@/assets/PaulStaats.jpeg'
         >
         <v-card-item>
           <div class="d-flex justify-center">
-            <v-btn class="mr-2" color="secondary">Curriculum vitae</v-btn>
-            <v-btn class="mr-2" color="secondary">Opdrachtgevers</v-btn>
-            <v-btn color="secondary">Inspiratie</v-btn>
+            <v-btn class="mr-2" color="logo">Curriculum vitae</v-btn>
+            <v-btn class="mr-2" color="logo">Opdrachtgevers</v-btn>
+            <v-btn color="logo">Inspiratie</v-btn>
           </div>
         </v-card-item>
       </v-card>
