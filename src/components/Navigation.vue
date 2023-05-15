@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { VNavigationDrawer } from 'vuetify/components'
 import logo from '@/assets/logo-paul.png'
+import ThemeSwitch from '@/components/ThemeSwitch.vue'
 </script>
 
 <template>
@@ -14,5 +15,6 @@ import logo from '@/assets/logo-paul.png'
       <v-list-item title="Profielschets" to="/profile"></v-list-item>
       <v-list-item title="Contact" to="/contact"></v-list-item>
     </v-list>
+    <ThemeSwitch />
   </v-navigation-drawer>
 </template>
