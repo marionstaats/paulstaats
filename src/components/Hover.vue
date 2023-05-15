@@ -29,6 +29,6 @@ const isDialogOpen = ref(false)
   </v-hover>
   <ProjectDialog
     :modelValue="isDialogOpen"
-    @update:modelValue="(value) => (isDialogOpen = value)"
+    @update:modelValue="(value: boolean) => (isDialogOpen = value)"
   />
 </template>

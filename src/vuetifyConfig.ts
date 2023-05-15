@@ -1,3 +1,4 @@
+// @ts-ignore
 import colors from 'vuetify/lib/util/colors'
 import '@mdi/font/css/materialdesignicons.css'
 export default {
