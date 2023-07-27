@@ -7,7 +7,11 @@ defineProps({
 </script>
 
 <template>
-  <v-dialog :modelValue="modelValue" width="auto">
+  <v-dialog
+    :modelValue="modelValue"
+    width="auto"
+    @update:modelValue="(value: boolean) => $emit('update:modelValue', value)"
+  >
     <v-card>
       <v-card-item>
         <ProjectCarousel />
