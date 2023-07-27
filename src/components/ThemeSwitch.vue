@@ -9,13 +9,10 @@ const themeDark = ref(themeStore.dark)
 </script>
 
 <template>
-  <v-switch
-    class="float-right"
-    v-model="themeDark"
-    style="width: max-content"
-    @update:modelValue="() => themeStore.switch(theme)"
-  >
-    <template v-slot:prepend><v-icon icon="mdi-white-balance-sunny" /></template
-    ><template v-slot:append><v-icon icon="mdi-moon-waning-crescent" /></template
-  ></v-switch>
+  <div class="d-flex">
+    <v-switch v-model="themeDark" @update:modelValue="() => themeStore.switch(theme)">
+      <template v-slot:prepend><v-icon icon="mdi-white-balance-sunny" /></template
+      ><template v-slot:append><v-icon icon="mdi-moon-waning-crescent" /></template
+    ></v-switch>
+  </div>
 </template>

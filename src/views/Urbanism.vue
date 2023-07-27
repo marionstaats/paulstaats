@@ -4,7 +4,7 @@ import Hover from '@/components/Hover.vue'
 </script>
 
 <template>
-  <Page title="Projecten">
+  <Page title="Stedebouw">
     <v-row>
       <v-col v-for="n in 9" :key="n" class="d-flex child-flex" cols="4">
         <Hover />

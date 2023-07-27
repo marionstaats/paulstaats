@@ -28,13 +28,6 @@ import paul from '@/assets/images/profile-paul.jpeg'
           opgaves aan en snel inspelen op de vraag. Het kan gaan om een herinrichting van een
           straat, een bebouwingsstudie of een bestemmingsplan.</v-card-text
         >
-        <v-card-item>
-          <div class="d-flex justify-center">
-            <v-btn class="mr-2" color="secondary">Curriculum vitae</v-btn>
-            <v-btn class="mr-2" color="secondary">Opdrachtgevers</v-btn>
-            <v-btn color="secondary">Inspiratie</v-btn>
-          </div>
-        </v-card-item>
       </v-card>
     </div>
   </Page>
