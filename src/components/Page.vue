@@ -10,4 +10,3 @@ defineProps({
     <slot></slot>
   </v-container>
 </template>
-<script setup lang="ts"></script>

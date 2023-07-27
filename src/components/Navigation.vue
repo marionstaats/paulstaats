@@ -4,6 +4,7 @@ import logo from '@/assets/images/logo-paul.png'
 import ThemeSwitch from '@/components/ThemeSwitch.vue'
 import { Routes } from '@/router/routes'
 import router from '@/router'
+import { profile, projects } from '@/data/navigation'
 </script>
 
 <template>
@@ -19,37 +20,25 @@ import router from '@/router'
             <v-list-item v-bind="props" title="Projecten"></v-list-item>
           </template>
           <v-list-item
-            title="Stedebouw"
-            :to="Routes.Urbanism"
-            prepend-icon="mdi-city"
+            v-for="({ title, icon, to }, i) in projects"
+            :key="i"
+            :title="title"
+            :prepend-icon="icon"
+            :to="to"
+            :value="title"
           ></v-list-item>
-          <v-list-item title="Planologie" :to="Routes.Planning"></v-list-item>
-          <v-list-item
-            title="Buitenruimte"
-            :to="Routes.Outside"
-            prepend-icon="mdi-tree-outline"
-          ></v-list-item>
-          <v-list-item title="Evengoed" :to="Routes.Other"></v-list-item>
         </v-list-group>
         <v-list-group value="Profiel" prepend-icon="mdi-account">
           <template v-slot:activator="{ props }">
             <v-list-item v-bind="props" title="Profiel"></v-list-item>
           </template>
           <v-list-item
-            title="Profielschets"
-            :to="Routes.Profile"
-            prepend-icon="mdi-account"
-          ></v-list-item>
-          <v-list-item
-            title="Curriculum Vitae"
-            :to="Routes.CV"
-            prepend-icon="mdi-file-document-outline"
-          ></v-list-item>
-          <v-list-item title="Opdrachtgevers" :to="Routes.Clients"></v-list-item>
-          <v-list-item
-            title="Inspiratie"
-            :to="Routes.Inspiration"
-            prepend-icon="mdi-lightbulb-on-outline"
+            v-for="({ title, icon, to }, i) in profile"
+            :key="i"
+            :title="title"
+            :prepend-icon="icon"
+            :to="to"
+            :value="title"
           ></v-list-item>
         </v-list-group>
         <v-list-item title="Contact" :to="Routes.Contact" prepend-icon="mdi-phone"></v-list-item>

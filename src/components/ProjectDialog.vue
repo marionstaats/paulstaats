@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import ProjectCarousel from '@/components/ProjectCarousel.vue'
 
+defineEmits(['update:modelValue'])
+
 defineProps({
   modelValue: { type: Boolean, default: false }
 })
