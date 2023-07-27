@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { VNavigationDrawer } from 'vuetify/components'
-import logo from '@/assets/logo-paul.png'
+import logo from '@/assets/images/logo-paul.png'
 import ThemeSwitch from '@/components/ThemeSwitch.vue'
 </script>
 

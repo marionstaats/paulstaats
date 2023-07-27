@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Page from '@/components/Page.vue'
-import paul from '@/assets/PaulStaats.jpeg'
+import paul from '@/assets/images/profile-paul.jpeg'
 </script>
 
 <template>
