@@ -9,7 +9,7 @@ const themeDark = ref(themeStore.dark)
 </script>
 
 <template>
-  <div class="d-flex">
+  <div class="theme-switch d-flex">
     <v-switch v-model="themeDark" @update:modelValue="() => themeStore.switch(theme)">
       <template v-slot:prepend><v-icon icon="mdi-white-balance-sunny" /></template
       ><template v-slot:append><v-icon icon="mdi-moon-waning-crescent" /></template

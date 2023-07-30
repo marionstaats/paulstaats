@@ -1,0 +1,13 @@
+@import './base.css';
+
+.navigation__content {
+    height: calc(100vh - 100px);
+}
+
+.theme-switch {
+    .v-input__details {
+        padding: 0;
+        max-height: 0;
+        min-height: 0;
+    }
+}

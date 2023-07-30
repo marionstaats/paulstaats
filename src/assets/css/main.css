@@ -1,5 +1,0 @@
-@import './base.css';
-
-.navigation__content {
-    height: calc(100vh - 100px);
-}

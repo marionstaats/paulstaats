@@ -1,0 +1,17 @@
+<script setup lang="ts">
+import ThemeSwitch from '@/components/ThemeSwitch.vue'
+import { ref } from 'vue'
+import Navigation from '@/components/Navigation.vue'
+
+const drawer = ref(false)
+</script>
+
+<template>
+  <v-app-bar class="bg-backgroundNav pa-2" density="compact" rounded :elevation="2">
+    <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+    <template v-slot:append>
+      <ThemeSwitch />
+    </template>
+  </v-app-bar>
+  <Navigation :modelValue="drawer" />
+</template>

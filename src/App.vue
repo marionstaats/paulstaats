@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import Navigation from '@/components/Navigation.vue'
 import { onMounted } from 'vue'
 import { useTheme } from 'vuetify'
 import { useThemeStore } from '@/stores/themeStore'
+import { isMobile } from '@/composables/isMobile'
+import logo from '@/assets/images/logo-paul.png'
 
 onMounted(() => {
   const themeStore = useThemeStore()
@@ -14,8 +15,8 @@ onMounted(() => {
 <template>
   <v-app>
     <v-main class="bg-background">
-      <Navigation />
       <RouterView />
     </v-main>
+    <v-footer v-if="isMobile" :height="50" app> <v-img :src="logo" /></v-footer>
   </v-app>
 </template>
