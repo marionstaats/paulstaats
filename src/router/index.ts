@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { Routes } from '@/router/routes'
-import Urbanism from '@/views/Urbanism.vue'
-import Planning from '@/views/Planning.vue'
-import Outside from '@/views/Outside.vue'
-import Other from '@/views/Other.vue'
-import Home from '@/views/Home.vue'
+import Urbanism from '@/pages/Urbanism.vue'
+import Planning from '@/pages/Planning.vue'
+import Outside from '@/pages/Outside.vue'
+import Other from '@/pages/Other.vue'
+import Home from '@/pages/Home.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,27 +41,27 @@ const router = createRouter({
     {
       path: '/profile',
       name: Routes.Profile,
-      component: () => import('../views/Profile.vue')
+      component: () => import('@/pages/Profile.vue')
     },
     {
       path: '/cv',
       name: Routes.CV,
-      component: () => import('../views/CV.vue')
+      component: () => import('@/pages/CV.vue')
     },
     {
       path: '/clients',
       name: Routes.Clients,
-      component: () => import('../views/Clients.vue')
+      component: () => import('@/pages/Clients.vue')
     },
     {
       path: '/inspiration',
       name: Routes.Inspiration,
-      component: () => import('../views/Inspiration.vue')
+      component: () => import('@/pages/Inspiration.vue')
     },
     {
       path: '/contact',
       name: Routes.Contact,
-      component: () => import('../views/Contact.vue')
+      component: () => import('@/pages/Contact.vue')
     }
   ]
 })

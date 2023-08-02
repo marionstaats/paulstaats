@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import Page from '@/components/Page.vue'
-import Hover from '@/components/Hover.vue'
+import ProjectCard from '@/components/ProjectCard.vue'
 </script>
 
 <template>
-  <Page title="Stedebouw">
+  <Page title="Evengoed">
     <v-row>
       <v-col v-for="n in 9" :key="n" class="d-flex child-flex" cols="4">
-        <Hover />
+        <ProjectCard />
       </v-col>
     </v-row>
   </Page>
