@@ -5,7 +5,7 @@ import { projects } from '@/composables/projects'
 </script>
 
 <template>
-  <Page title="Stedebouw">
+  <Page title="STEDEBOUW">
     <v-row>
       <v-col v-for="(project, i) in projects" :key="i" class="d-flex child-flex" cols="4">
         <ProjectCard :project="project" />

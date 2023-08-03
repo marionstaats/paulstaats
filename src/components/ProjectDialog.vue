@@ -19,7 +19,7 @@ defineProps({
   >
     <v-card>
       <v-card-item>
-        <ProjectCarousel :imgSource="project?.imgSource" />
+        <ProjectCarousel :imageFolder="project?.imageFolder" :images="project?.images" />
       </v-card-item>
       <v-card-text>
         {{

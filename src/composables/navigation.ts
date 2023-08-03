@@ -3,14 +3,13 @@ import { Routes } from '@/router/routes'
 type Navigation = {
   title: string
   to: Routes
-  icon: string
+  icon?: string
 }
 
-export const projects: Navigation[] = [
+export const projectsNav: Navigation[] = [
   {
-    title: 'Stedebouw',
-    to: Routes.Urbanism,
-    icon: 'mdi-city'
+    title: 'STEDEBOUW',
+    to: Routes.Urbanism
   },
   {
     title: 'Planologie',
@@ -29,7 +28,7 @@ export const projects: Navigation[] = [
   }
 ]
 
-export const profile: Navigation[] = [
+export const profileNav: Navigation[] = [
   {
     title: 'Profielschets',
     to: Routes.Profile,

@@ -4,7 +4,7 @@ import logo from '@/assets/images/logo-paul.png'
 import ThemeSwitch from '@/components/ThemeSwitch.vue'
 import { Routes } from '@/router/routes'
 import router from '@/router'
-import { profile, projects } from '@/composables/navigation'
+import { profileNav, projectsNav } from '@/composables/navigation'
 import { isMobile } from '@/composables/isMobile'
 
 defineProps({
@@ -30,7 +30,7 @@ defineProps({
             <v-list-item v-bind="props" title="Projecten"></v-list-item>
           </template>
           <v-list-item
-            v-for="({ title, icon, to }, i) in projects"
+            v-for="({ title, icon, to }, i) in projectsNav"
             :key="i"
             :title="title"
             :prepend-icon="icon"
@@ -43,7 +43,7 @@ defineProps({
             <v-list-item v-bind="props" title="Profiel"></v-list-item>
           </template>
           <v-list-item
-            v-for="({ title, icon, to }, i) in profile"
+            v-for="({ title, icon, to }, i) in profileNav"
             :key="i"
             :title="title"
             :prepend-icon="icon"

@@ -1,7 +1,8 @@
 export type Project = {
   title: string
   subTitle: string
-  imgSource: string
+  imageFolder: string
+  images: string[] // First will be used for main card
   text: string
   link?: string
   linkText?: string
@@ -11,7 +12,8 @@ export const projects: Project[] = [
   {
     title: 'Bedrijventerrein De Beemd',
     subTitle: 'Gemeente Rheden, Velp 1999-2007',
-    imgSource: 'De-Beemd',
+    imageFolder: 'projects/De-Beemd',
+    images: ['panorama4c.png', 'brug.jpg', 'laan.jpg', 'panorama1.jpg'],
     text:
       'Vanaf 2000 is de gemeente Rheden actief met de uitgifte van kavels op het bedrijventerrein De Beemd in Velp. Verantwoordelijk voor het stedebouwkundig ontwerp, het bestemmings- en beeldkwaliteitsplan. Tot 2007 ontwerper voor de buitenruimte en supervisor voor de architectuur. Inmiddels is het terrein bijna volledig uitgegeven, op twee kavels na.\n' +
       '\n' +

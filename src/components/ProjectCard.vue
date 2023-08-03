@@ -17,7 +17,12 @@ const isDialogOpen = ref(false)
     <template v-slot:default="{ isHovering, props }">
       <v-card v-bind="props">
         <v-card-item>
-          <v-img src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"></v-img>
+          <v-img
+            :src="
+              `/${project?.imageFolder}/${project?.images[0]}` ||
+              'https://cdn.vuetifyjs.com/images/cards/forest-art.jpg'
+            "
+          ></v-img>
         </v-card-item>
         <v-card-title>
           <h2 class="text-h6 text-primary">{{ project?.title || 'some title' }}</h2>
