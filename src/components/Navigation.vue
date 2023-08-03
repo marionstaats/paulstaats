@@ -27,31 +27,29 @@ defineProps({
       <v-list density="compact" nav>
         <v-list-group value="Projecten">
           <template v-slot:activator="{ props }">
-            <v-list-item v-bind="props" title="Projecten"></v-list-item>
+            <v-list-item v-bind="props" title="PROJECTEN"></v-list-item>
           </template>
           <v-list-item
-            v-for="({ title, icon, to }, i) in projectsNav"
+            v-for="({ title, to }, i) in projectsNav"
             :key="i"
             :title="title"
-            :prepend-icon="icon"
             :to="to"
             :value="title"
           ></v-list-item>
         </v-list-group>
-        <v-list-group value="Profiel" prepend-icon="mdi-account">
+        <v-list-group value="Profiel">
           <template v-slot:activator="{ props }">
-            <v-list-item v-bind="props" title="Profiel"></v-list-item>
+            <v-list-item v-bind="props" title="PROFIEL"></v-list-item>
           </template>
           <v-list-item
-            v-for="({ title, icon, to }, i) in profileNav"
+            v-for="({ title, to }, i) in profileNav"
             :key="i"
             :title="title"
-            :prepend-icon="icon"
             :to="to"
             :value="title"
           ></v-list-item>
         </v-list-group>
-        <v-list-item title="Contact" :to="Routes.Contact" prepend-icon="mdi-phone"></v-list-item>
+        <v-list-item title="CONTACT" :to="Routes.Contact"></v-list-item>
       </v-list>
       <ThemeSwitch v-if="!isMobile" class="align-self-center pb-2" />
     </div>

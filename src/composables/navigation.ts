@@ -3,7 +3,6 @@ import { Routes } from '@/router/routes'
 type Navigation = {
   title: string
   to: Routes
-  icon?: string
 }
 
 export const projectsNav: Navigation[] = [
@@ -13,40 +12,33 @@ export const projectsNav: Navigation[] = [
   },
   {
     title: 'Planologie',
-    to: Routes.Planning,
-    icon: 'mdi-city'
+    to: Routes.Planning
   },
   {
     title: 'Buitenruimte',
-    to: Routes.Outside,
-    icon: 'mdi-tree-outline'
+    to: Routes.Outside
   },
   {
     title: 'Evengoed',
-    to: Routes.Other,
-    icon: 'mdi-tree-outline'
+    to: Routes.Other
   }
 ]
 
 export const profileNav: Navigation[] = [
   {
     title: 'Profielschets',
-    to: Routes.Profile,
-    icon: 'mdi-account'
+    to: Routes.Profile
   },
   {
     title: 'Curriculum Vitae',
-    to: Routes.CV,
-    icon: 'mdi-file-document-outline'
+    to: Routes.CV
   },
   {
     title: 'Opdrachtgevers',
-    to: Routes.Clients,
-    icon: 'mdi-file-document-outline'
+    to: Routes.Clients
   },
   {
     title: 'Inspiratie',
-    to: Routes.Inspiration,
-    icon: 'mdi-lightbulb-on-outline'
+    to: Routes.Inspiration
   }
 ]
