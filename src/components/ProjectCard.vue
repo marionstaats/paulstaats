@@ -4,7 +4,7 @@ import type { PropType } from 'vue'
 import ProjectDialog from '@/components/ProjectDialog.vue'
 import type { Project } from '@/composables/projects'
 
-const props = defineProps({
+defineProps({
   modelValue: { type: Boolean, default: false },
   project: { type: Object as PropType<Project> } //, required: true
 })
@@ -33,8 +33,8 @@ const isDialogOpen = ref(false)
           contained
           scrim="#036358"
           class="align-center justify-center"
+          @click="isDialogOpen = true"
         >
-          <v-btn color="primary" @click="isDialogOpen = true">Open Dialog</v-btn>
         </v-overlay>
       </v-card>
     </template>

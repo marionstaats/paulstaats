@@ -1,4 +1,7 @@
+import { Routes } from '@/router/routes'
+
 export type Project = {
+  page: Routes
   title: string
   subTitle: string
   imageFolder: string
@@ -10,6 +13,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    page: Routes.Urbanism,
     title: 'Bedrijventerrein De Beemd',
     subTitle: 'Gemeente Rheden, Velp 1999-2007',
     imageFolder: 'projects/De-Beemd',
