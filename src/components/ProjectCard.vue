@@ -26,7 +26,7 @@ const isDialogOpen = ref(false)
         </v-card-item>
         <v-card-title>
           <h2 class="text-h6 text-primary">{{ project?.title || 'some title' }}</h2>
-          {{ project?.subTitle || 'some subtitle' }}
+          {{ project?.subTitle }}
         </v-card-title>
         <v-overlay
           :modelValue="isHovering"

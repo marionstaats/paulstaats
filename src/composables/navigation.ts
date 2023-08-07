@@ -7,7 +7,7 @@ type Navigation = {
 
 export const projectsNav: Navigation[] = [
   {
-    title: 'STEDEBOUW',
+    title: 'Stedebouw',
     to: Routes.Urbanism
   },
   {

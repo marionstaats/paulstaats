@@ -22,10 +22,7 @@ defineProps({
         <ProjectCarousel :imageFolder="project?.imageFolder" :images="project?.images" />
       </v-card-item>
       <v-card-text>
-        {{
-          project?.text ||
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.'
-        }}
+        {{ project?.text }}
       </v-card-text>
       <v-card-actions>
         <v-btn color="primary" block @click="$emit('update:modelValue', false)">Close Dialog</v-btn>
