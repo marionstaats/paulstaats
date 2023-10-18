@@ -1,15 +1,19 @@
 <script setup lang="ts">
 import { VNavigationDrawer } from 'vuetify/components'
-import logo from '@/assets/images/logo-paul.png'
 import ThemeSwitch from '@/components/ThemeSwitch.vue'
+import Logo from '@/components/Logo.vue'
 import { Routes } from '@/router/routes'
-import router from '@/router'
 import { profileNav, projectsNav } from '@/composables/navigation'
 import { isMobile } from '@/composables/isMobile'
+import { useThemeStore } from '@/stores/themeStore'
+import { storeToRefs } from 'pinia'
 
 defineProps({
   modelValue: { type: Boolean, default: false }
 })
+
+const themeStore = useThemeStore()
+const { dark } = storeToRefs(themeStore)
 </script>
 
 <template>
@@ -19,9 +23,7 @@ defineProps({
     :temporary="isMobile"
     :permanent="!isMobile"
   >
-    <div v-if="!isMobile" class="pa-4" @click="() => router.push(Routes.Home)">
-      <v-img :src="logo" />
-    </div>
+    <Logo v-if="!isMobile" />
 
     <div class="navigation__content mt-2 d-flex flex-column justify-space-between">
       <v-list density="compact" nav>

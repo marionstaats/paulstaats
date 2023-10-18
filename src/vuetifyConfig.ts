@@ -10,7 +10,7 @@ export default {
           primary: colors.red.darken1,
           secondary: colors.red.lighten4,
 
-          background: colors.grey.lighten5,
+          background: colors.shades.white,
           backgroundNav: colors.grey.lighten4
         }
       },

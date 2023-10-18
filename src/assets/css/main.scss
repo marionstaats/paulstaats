@@ -4,6 +4,17 @@
     height: calc(100vh - 100px);
 }
 
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(var(--v-theme-background), 0.8); // CC = 80% opaque
+
+    .v-tab__slider {
+        bottom: -5px;
+    }
+}
+
 .theme-switch {
     .v-input__details {
         padding: 0;
