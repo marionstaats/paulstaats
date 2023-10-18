@@ -9,7 +9,7 @@ import ThemeSwitch from '@/components/ThemeSwitch.vue'
     <Logo />
     <div class="d-flex align-center px-4">
       <v-tabs align-tabs="end">
-        <v-tab :to="Routes.Planning">PROJECTEN</v-tab>
+        <v-tab :to="Routes.Home">PROJECTEN</v-tab>
         <v-tab :to="Routes.Profile">PROFIELSCHETS</v-tab>
         <v-tab :to="Routes.Clients">OPDRACHTGEVERS</v-tab>
         <v-tab :to="Routes.Contact">CONTACT</v-tab>

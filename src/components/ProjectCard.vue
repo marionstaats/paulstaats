@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import type { PropType } from 'vue'
-import ProjectDialog from '@/components/ProjectDialog.vue'
 import type { Project } from '@/composables/projects'
 
 defineProps({
@@ -9,7 +7,12 @@ defineProps({
   project: { type: Object as PropType<Project> } //, required: true
 })
 
-const isDialogOpen = ref(false)
+//  <v-img
+// :src="
+//     `/${project?.imageFolder}/${project?.images[0]}` ||
+//   'https://cdn.vuetifyjs.com/images/cards/forest-art.jpg'
+// "
+// ></v-img>
 </script>
 
 <template>
@@ -17,12 +20,7 @@ const isDialogOpen = ref(false)
     <template v-slot:default="{ isHovering, props }">
       <v-card v-bind="props">
         <v-card-item>
-          <v-img
-            :src="
-              `/${project?.imageFolder}/${project?.images[0]}` ||
-              'https://cdn.vuetifyjs.com/images/cards/forest-art.jpg'
-            "
-          ></v-img>
+          <v-img src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"></v-img>
         </v-card-item>
         <v-card-title>
           <h2 class="text-h6 text-primary">{{ project?.title || 'some title' }}</h2>
@@ -31,17 +29,12 @@ const isDialogOpen = ref(false)
         <v-overlay
           :modelValue="isHovering"
           contained
-          scrim="#036358"
+          scrim="darkgrey"
           class="align-center justify-center"
-          @click="isDialogOpen = true"
         >
+          <h1 style="color: white">hello there</h1>
         </v-overlay>
       </v-card>
     </template>
   </v-hover>
-  <ProjectDialog
-    :modelValue="isDialogOpen"
-    :project="project"
-    @update:modelValue="(value: boolean) => (isDialogOpen = value)"
-  />
 </template>

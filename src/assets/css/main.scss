@@ -10,9 +10,10 @@
     z-index: 10;
     background-color: rgba(var(--v-theme-background), 0.8); // CC = 80% opaque
 
-    .v-tab__slider {
-        bottom: -5px;
-    }
+}
+
+.v-tab__slider {
+    bottom: -5px;
 }
 
 .theme-switch {
