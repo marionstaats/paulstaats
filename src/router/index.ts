@@ -1,12 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import type { RouteLocation, Router } from 'vue-router'
 import { Routes } from '@/router/routes'
 import Urbanism from '@/pages/Urbanism.vue'
 import Planning from '@/pages/Planning.vue'
 import Outside from '@/pages/Outside.vue'
 import Other from '@/pages/Other.vue'
 import Home from '@/pages/Home.vue'
+import Project from '@/pages/Project.vue'
 
-const router = createRouter({
+const router: Router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
@@ -17,6 +19,14 @@ const router = createRouter({
       path: '/home',
       name: Routes.Home,
       component: Home
+    },
+    {
+      path: '/project/:projectName',
+      name: Routes.Project,
+      component: Project,
+      props: (route: RouteLocation) => ({
+        projectName: route.params.projectName
+      })
     },
     {
       path: '/urbanism',

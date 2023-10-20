@@ -1,5 +1,6 @@
 export enum Routes {
   Home = 'home',
+  Project = 'project',
   Projects = 'projects',
   Urbanism = 'urbanism',
   Planning = 'planning',
