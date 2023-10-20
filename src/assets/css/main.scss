@@ -23,3 +23,11 @@
         min-height: 0;
     }
 }
+
+.v-card {
+    transition: transform 5s;
+}
+
+.v-card:hover img {
+    transform: scale(1.1);
+}

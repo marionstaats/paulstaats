@@ -29,7 +29,7 @@ defineProps({
         <v-overlay
           :modelValue="isHovering"
           contained
-          scrim="darkgrey"
+          scrim="transparent"
           class="align-center justify-center"
         >
           <h1 style="color: white">hello there</h1>
