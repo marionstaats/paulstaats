@@ -1,10 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import type { RouteLocation, Router } from 'vue-router'
+import type { Router } from 'vue-router'
 import { Routes } from '@/router/routes'
-import Urbanism from '@/pages/Urbanism.vue'
-import Planning from '@/pages/Planning.vue'
-import Outside from '@/pages/Outside.vue'
-import Other from '@/pages/Other.vue'
 import Home from '@/pages/Home.vue'
 import Project from '@/pages/Project.vue'
 
@@ -21,32 +17,13 @@ const router: Router = createRouter({
       component: Home
     },
     {
-      path: '/project/:projectName',
+      path: '/project',
+      // path: '/project/:projectName',
       name: Routes.Project,
-      component: Project,
-      props: (route: RouteLocation) => ({
-        projectName: route.params.projectName
-      })
-    },
-    {
-      path: '/urbanism',
-      name: Routes.Urbanism,
-      component: Urbanism
-    },
-    {
-      path: '/planning',
-      name: Routes.Planning,
-      component: Planning
-    },
-    {
-      path: '/outside',
-      name: Routes.Outside,
-      component: Outside
-    },
-    {
-      path: '/other',
-      name: Routes.Other,
-      component: Other
+      component: Project
+      // props: (route: RouteLocation) => ({
+      //   projectName: route.params.projectName
+      // })
     },
     {
       path: '/profile',

@@ -7,24 +7,9 @@ type Navigation = {
 
 export const projectsNav: Navigation[] = [
   {
-    title: 'Stedebouw',
-    to: Routes.Urbanism
+    title: 'Projects',
+    to: Routes.Home
   },
-  {
-    title: 'Planologie',
-    to: Routes.Planning
-  },
-  {
-    title: 'Buitenruimte',
-    to: Routes.Outside
-  },
-  {
-    title: 'Evengoed',
-    to: Routes.Other
-  }
-]
-
-export const profileNav: Navigation[] = [
   {
     title: 'Profielschets',
     to: Routes.Profile
@@ -36,9 +21,5 @@ export const profileNav: Navigation[] = [
   {
     title: 'Opdrachtgevers',
     to: Routes.Clients
-  },
-  {
-    title: 'Inspiratie',
-    to: Routes.Inspiration
   }
 ]

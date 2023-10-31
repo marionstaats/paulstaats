@@ -24,10 +24,24 @@
     }
 }
 
-.v-card {
+.project-card {
     transition: transform 5s;
 }
 
-.v-card:hover img {
+.project-card:hover img {
     transform: scale(1.1);
+}
+
+.project-share {
+    border-top: 2px solid rgb(var(--v-theme-primary));
+    border-bottom: 2px solid rgb(var(--v-theme-primary));
+    width: 100%;
+}
+
+.project-nav {
+    width: 100%;
+}
+
+a {
+    color: rgb(var(--v-theme-text));
 }

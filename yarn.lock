@@ -1436,6 +1436,13 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
+flipbook-vue@^1.0.0-beta.4:
+  version "1.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/flipbook-vue/-/flipbook-vue-1.0.0-beta.4.tgz#e272fe4af0216f691e028585902c72acf3895c7b"
+  integrity sha512-4FycLNWkxEpHUCk08s1g9q1G/r1S/r3GI7LCalwMtr4G7Y7IDgKbA9AF7AjDPFudny+Rqndw74SHKVnksSebCA==
+  dependencies:
+    rematrix "^0.7.2"
+
 for-each@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/for-each/-/for-each-0.3.3.tgz#69b447e88a0a5d32c3e7084f3f1710034b21376e"
@@ -2261,6 +2268,11 @@ regexp.prototype.flags@^1.5.0:
     call-bind "^1.0.2"
     define-properties "^1.2.0"
     functions-have-names "^1.2.3"
+
+rematrix@^0.7.2:
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/rematrix/-/rematrix-0.7.2.tgz#09b59118a6b46fc054ff64b6992e4865f5569077"
+  integrity sha512-NYLmE17dX15eUPhngLMTKlRYwATxEhcRdn9LKtk/iOXHxDKglCZnD2MrMLKwLlB5FX8u9kF/9yMhlQJpeDcuPw==
 
 resolve-from@^4.0.0:
   version "4.0.0"

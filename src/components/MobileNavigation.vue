@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ThemeSwitch from '@/components/ThemeSwitch.vue'
 import { ref } from 'vue'
-import Navigation from '@/components/Navigation.vue'
+import NavigationDrawer from '@/components/NavigationDrawer.vue'
 
 const drawer = ref(false)
 </script>
@@ -13,5 +13,5 @@ const drawer = ref(false)
       <ThemeSwitch />
     </template>
   </v-app-bar>
-  <Navigation :modelValue="drawer" />
+  <NavigationDrawer :modelValue="drawer" />
 </template>

@@ -22,6 +22,7 @@ defineProps({
     <template v-slot:default="{ isHovering, props }">
       <v-card
         v-bind="props"
+        class="project-card"
         @click="
           () => router.push({ name: Routes.Project, params: { projectName: 'Some project' } })
         "
