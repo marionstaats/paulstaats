@@ -28,17 +28,3 @@ onMounted(() => {
     <v-footer v-if="isMobile" :height="50" app> <v-img :src="logo" /></v-footer>
   </v-app>
 </template>
-
-<style>
-.slider-enter-active {
-  transition: transform 1s;
-}
-
-.slider-enter-from {
-  transform: translateY(-100%);
-}
-
-.slider-enter-to {
-  transform: translateY(0);
-}
-</style>

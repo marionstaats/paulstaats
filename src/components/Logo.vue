@@ -17,7 +17,7 @@ const { dark } = storeToRefs(themeStore)
   <div
     class="logo d-flex pa-4"
     style="width: 220px; cursor: pointer"
-    @click="() => router.push(Routes.Home)"
+    @click="() => router.push({ name: Routes.Home })"
   >
     <v-img :src="logo" />
     <v-img style="width: 45px" v-if="dark" :src="signatureWhite" />

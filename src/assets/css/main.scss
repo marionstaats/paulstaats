@@ -8,7 +8,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: rgba(var(--v-theme-background), 0.8); // CC = 80% opaque
+    background-color: rgba(var(--v-theme-background), 0.8);
 
 }
 
@@ -44,4 +44,16 @@
 
 a {
     color: rgb(var(--v-theme-text));
+}
+
+.slider-enter-active {
+    transition: transform 0.5s;
+}
+
+.slider-enter-from {
+    transform: translateY(-100%);
+}
+
+.slider-enter-to {
+    transform: translateY(0);
 }
