@@ -7,19 +7,15 @@ type Navigation = {
 
 export const projectsNav: Navigation[] = [
   {
-    title: 'Projects',
-    to: Routes.Home
+    title: 'Werk',
+    to: Routes.Work
   },
   {
-    title: 'Profielschets',
+    title: 'Profiel',
     to: Routes.Profile
   },
   {
-    title: 'Curriculum Vitae',
-    to: Routes.CV
-  },
-  {
-    title: 'Opdrachtgevers',
-    to: Routes.Clients
+    title: 'CONTACT',
+    to: Routes.Contact
   }
 ]

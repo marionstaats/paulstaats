@@ -3,7 +3,6 @@ import Sharing from '@/components/Sharing.vue'
 import ProjectNavigation from '@/components/ProjectNavigation.vue'
 import ProjectText from '@/components/ProjectText.vue'
 import Flipbook from '@/components/Flipbook.vue'
-import Carousel from '@/components/Carousel.vue'
 
 defineProps({
   projectName: { type: String, default: 'Some Project' }
@@ -30,13 +29,12 @@ defineProps({
     </div>
     <v-container>
       <v-row>
-        <v-col cols="6">
+        <v-col cols="4">
           <ProjectText />
         </v-col>
-        <v-col cols="6"
+        <v-col cols="8"
           ><v-row class="mb-4"><Flipbook /></v-row
           ><v-row class="mb-4"><v-img src="https://picsum.photos/300/200" /></v-row
-          ><v-row class="mb-4"><Carousel /></v-row
         ></v-col>
       </v-row>
       <v-row><Sharing /></v-row>

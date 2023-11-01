@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { VNavigationDrawer } from 'vuetify/components'
-import { Routes } from '@/router/routes'
 import { projectsNav } from '@/composables/navigation'
 import { useThemeStore } from '@/stores/themeStore'
 import { storeToRefs } from 'pinia'
@@ -29,7 +28,6 @@ const { dark } = storeToRefs(themeStore)
           :to="{ name: to }"
           :value="title"
         ></v-list-item>
-        <v-list-item title="CONTACT" :to="{ name: Routes.Contact }"></v-list-item>
       </v-list>
     </div>
   </v-navigation-drawer>

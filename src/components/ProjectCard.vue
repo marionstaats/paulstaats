@@ -31,7 +31,7 @@ defineProps({
           <v-img src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"></v-img>
         </v-card-item>
         <v-card-title>
-          <h2 class="text-h6 text-primary">{{ project?.title || 'some title' }}</h2>
+          <h2 class="text-h6">{{ project?.title || 'some title' }}</h2>
           {{ project?.subTitle }}
         </v-card-title>
         <v-overlay
@@ -40,7 +40,6 @@ defineProps({
           scrim="transparent"
           class="align-center justify-center"
         >
-          <h1 style="color: white">hello there</h1>
         </v-overlay>
       </v-card>
     </template>

@@ -25,7 +25,7 @@
 }
 
 .project-card {
-    transition: transform 5s;
+    transition: transform 10s;
 }
 
 .project-card:hover img {
@@ -47,7 +47,7 @@ a {
 }
 
 .slider-enter-active {
-    transition: transform 0.5s;
+    transition: transform 1s;
 }
 
 .slider-enter-from {

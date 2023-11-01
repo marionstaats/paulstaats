@@ -18,8 +18,9 @@ const currentUrl = `https://paulstaats.com${route.fullPath}`
         target="_blank"
         href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
         class="fb-xfbml-parse-ignore"
-        ><v-icon icon="mdi-facebook"
-      /></a>
+        ><v-icon icon="mdi-facebook" /></a
+      ><a><v-icon icon="mdi-instagram" class="ml-3" /></a
+      ><a><v-icon icon="mdi-twitter" class="ml-3" /></a>
     </div>
   </div>
 </template>

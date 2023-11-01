@@ -46,13 +46,27 @@ const flipLeft = (flipbook: any) => {
       <v-overlay :modelValue="true" contained persistent scrim="transparent">
         <div
           v-if="showRightTriangle"
-          style="position: absolute; top: 180px; left: 280px; height: 20px; width: 20px"
+          style="
+            cursor: pointer;
+            position: absolute;
+            top: 180px;
+            left: 280px;
+            height: 20px;
+            width: 20px;
+          "
         >
           <v-img :src="triangle" @click="flipRight(flipbook)" />
         </div>
         <div
           v-if="!showRightTriangle"
-          style="position: absolute; top: 180px; left: 0; height: 20px; width: 20px"
+          style="
+            cursor: pointer;
+            position: absolute;
+            top: 180px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+          "
         >
           <v-img :src="triangleLeft" @click="() => flipLeft(flipbook)" />
         </div> </v-overlay></flipbook
