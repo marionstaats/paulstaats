@@ -13,7 +13,7 @@ export type Navigation = {
 
 export const mainNav: Navigation[] = [
   {
-    title: 'WORK',
+    title: 'WERK',
     to: Routes.Work
   },
   {
@@ -46,12 +46,16 @@ export const workNav: Navigation[] = [
 
 export const profileNav: Navigation[] = [
   {
-    title: 'PROFIELSCHETS',
+    title: 'PROFIEL',
     component: Profile
   },
   {
-    title: 'CV',
+    title: 'Curriculum Vitae',
     component: CV
+  },
+  {
+    title: 'PARTNERS',
+    component: Clients
   },
   {
     title: 'OPDRACHTGEVERS',
