@@ -27,18 +27,16 @@ defineProps({
         </h1></v-img
       >
     </div>
-    <v-container>
-      <v-row>
-        <v-col cols="4">
-          <ProjectText />
-        </v-col>
-        <v-col cols="8"
-          ><v-row class="mb-4"><Flipbook /></v-row
-          ><v-row class="mb-4"><v-img src="https://picsum.photos/300/200" /></v-row
-        ></v-col>
-      </v-row>
-      <v-row><Sharing /></v-row>
-      <v-row><ProjectNavigation /></v-row>
-    </v-container>
+    <Page>
+      <template v-slot:text>
+        <ProjectText />
+      </template>
+      <template v-slot:image>
+        <v-row class="mb-4"><Flipbook /></v-row
+        ><v-row class="mb-4"><v-img src="https://picsum.photos/400/200" /></v-row>
+        <v-row><Sharing /></v-row>
+        <v-row><ProjectNavigation /></v-row>
+      </template>
+    </Page>
   </div>
 </template>

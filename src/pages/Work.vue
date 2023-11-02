@@ -7,7 +7,7 @@ const tab = ref(1)
 
 <template>
   <div class="projects" style="margin: 0 150px">
-    <v-tabs v-model="tab" align-tabs="center">
+    <v-tabs slider-color="primary" v-model="tab" align-tabs="center">
       <v-tab :value="1">ALLES</v-tab>
       <v-tab :value="2">STEDEBOUW</v-tab>
       <v-tab :value="3">PLANOLOGIE</v-tab>
