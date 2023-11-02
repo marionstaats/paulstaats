@@ -3,6 +3,7 @@ import Sharing from '@/components/Sharing.vue'
 import ProjectNavigation from '@/components/ProjectNavigation.vue'
 import ProjectText from '@/components/ProjectText.vue'
 import Flipbook from '@/components/Flipbook.vue'
+import Page from '@/components/Page.vue'
 
 defineProps({
   projectName: { type: String, default: 'Some Project' }
@@ -32,11 +33,14 @@ defineProps({
         <ProjectText />
       </template>
       <template v-slot:image>
-        <v-row class="mb-4"><Flipbook /></v-row
-        ><v-row class="mb-4"><v-img src="https://picsum.photos/400/200" /></v-row>
-        <v-row><Sharing /></v-row>
-        <v-row><ProjectNavigation /></v-row>
+        <div>
+          <v-row class="mb-4"><Flipbook /></v-row
+          ><v-row class="mb-4"><v-img src="https://picsum.photos/400/200" /></v-row>
+        </div>
       </template>
+      <template v-slot:footer
+        ><v-row><Sharing /></v-row> <v-row><ProjectNavigation /></v-row
+      ></template>
     </Page>
   </div>
 </template>

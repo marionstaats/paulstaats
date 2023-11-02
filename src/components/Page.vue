@@ -8,5 +8,6 @@
       </v-col>
       <v-col cols="7"><slot name="image" /></v-col>
     </v-row>
+    <slot name="footer" />
   </v-container>
 </template>

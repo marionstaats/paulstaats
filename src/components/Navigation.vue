@@ -6,7 +6,6 @@ import { useRoute } from 'vue-router'
 import { Routes } from '@/router/routes'
 
 const route = useRoute()
-console.log(route)
 </script>
 
 <template>
