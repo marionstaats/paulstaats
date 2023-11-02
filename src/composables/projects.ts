@@ -13,7 +13,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    page: Routes.Urbanism,
+    page: Routes.Work,
     title: 'Bedrijventerrein De Beemd',
     subTitle: 'Gemeente Rheden, Velp 1999-2007',
     imageFolder: 'projects/De-Beemd',
@@ -29,48 +29,11 @@ export const projects: Project[] = [
 
 export const inspirations: Project[] = [
   {
-    page: Routes.Inspiration,
+    page: Routes.Work,
     title: 'Alles voor stad en land',
     imageFolder: 'inspiration',
     images: ['foto-stedebouwers.png'],
     text: 'Plezier in het creëren.'
-  },
-  {
-    page: Routes.Inspiration,
-    title: 'Wrekers op de fiets',
-    imageFolder: 'inspiration',
-    images: ['wrekers.png'],
-    text: 'Naar Gert-Jan Theunisse:\n' + '\n' + '“De fiets, de fiets en verder niets.”'
-  },
-  {
-    page: Routes.Inspiration,
-    title: 'Kunstwerk !',
-    imageFolder: 'inspiration',
-    images: ['Kunstwerk!.png'],
-    text: 'We ontwerpen de omgeving om te gebruiken.'
-  },
-  {
-    page: Routes.Inspiration,
-    title: 'Alles kan op maat gemaakt worden',
-    imageFolder: 'inspiration',
-    images: ['alles-op-maat.png'],
-    text: 'Alles maken we voor mens en natuur. Daarom kan het op maat gemaakt worden. '
-  },
-  {
-    page: Routes.Inspiration,
-    title: 'Art Brut',
-    imageFolder: 'inspiration',
-    images: ['Artbrut-1.png'],
-    text: 'Niet altijd een kunstenaar nodig om Kunst te maken. Om iets moois te maken moet het gevoel spreken. Art Brut Biënnale, Hengelo 2012.'
-  },
-  {
-    page: Routes.Inspiration,
-    title: 'Broadway Boogie Woogie',
-    imageFolder: 'inspiration',
-    images: ['Piet_Mondrian,_1942_-_Broadway_Boogie_Woogie.jpg', 'Portret-Mondriaan.jpg'],
-    text:
-      'Die stijve Mondriaan had alles onder controle. Alle kleuren en vlakken perfect in verhouding.\n' +
-      '\n' +
-      'Totdat hij de Boogie-Woogie ging dansen. En zelfs die kon hij verbeelden in 1943.'
   }
+  //
 ]
