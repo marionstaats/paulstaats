@@ -4,8 +4,8 @@ import { useTheme } from 'vuetify'
 import { useThemeStore } from '@/stores/themeStore'
 import { isMobile } from '@/composables/isMobile'
 import logo from '@/assets/images/logo-paul.png'
-import Navigation from '@/components/Navigation.vue'
-import MobileNavigation from '@/components/MobileNavigation.vue'
+import Navigation from '@/components/navigation/Navigation.vue'
+import MobileNavigation from '@/components/navigation/MobileNavigation.vue'
 
 onMounted(() => {
   const themeStore = useThemeStore()

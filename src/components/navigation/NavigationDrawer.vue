@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { VNavigationDrawer } from 'vuetify/components'
-import { projectsNav } from '@/composables/navigation'
+import { mainNav } from '@/composables/navigation'
 import { useThemeStore } from '@/stores/themeStore'
 import { storeToRefs } from 'pinia'
 
@@ -22,7 +22,7 @@ const { dark } = storeToRefs(themeStore)
     <div class="navigation__content mt-2 d-flex flex-column justify-space-between">
       <v-list density="compact" nav>
         <v-list-item
-          v-for="({ title, to }, i) in projectsNav"
+          v-for="({ title, to }, i) in mainNav"
           :key="i"
           :title="title"
           :to="{ name: to }"

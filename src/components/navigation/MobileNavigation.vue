@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ThemeSwitch from '@/components/ThemeSwitch.vue'
 import { ref } from 'vue'
-import NavigationDrawer from '@/components/NavigationDrawer.vue'
+import NavigationDrawer from '@/components/navigation/NavigationDrawer.vue'
 
 const drawer = ref(false)
 </script>

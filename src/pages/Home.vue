@@ -1,10 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CoverImage from '@/components/CoverImage.vue'
+</script>
 
 <template>
   <div>
-    <div style="height: 600px; width: 100vw" class="mb-8">
-      <v-img cover src="https://picsum.photos/2000/1000" />
-    </div>
+    <CoverImage image="https://picsum.photos/2000/1000" />
     <v-container> Paul Staats en co - Stedebouwkundige plannen voor al uw tuinhuisjes </v-container>
   </div>
 </template>
