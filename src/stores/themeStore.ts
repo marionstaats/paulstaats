@@ -4,7 +4,7 @@ import type { ThemeInstance } from 'vuetify'
 export const useThemeStore = defineStore('theme', {
   state: () => {
     return {
-      dark: false
+      dark: true
     }
   },
   actions: {
