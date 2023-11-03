@@ -50,7 +50,7 @@ export const profileNav: Navigation[] = [
     component: Profile
   },
   {
-    title: 'Curriculum Vitae',
+    title: 'CURRICULUM VITAE',
     component: CV
   },
   {

@@ -67,7 +67,7 @@ a {
     &-y-reverse-transition {
         &-enter-active,
         &-leave-active {
-            transition: 6s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+            transition: 4s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
         }
     }
 }
