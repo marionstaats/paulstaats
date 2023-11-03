@@ -5,7 +5,7 @@ import CoverImage from '@/components/CoverImage.vue'
 
 <template>
   <div>
-    <CoverImage :image="location" />
+    <CoverImage :images="[location]" />
     <div class="d-flex justify-space-around">
       <div>
         <h2 class="mb-2">Bureau</h2>

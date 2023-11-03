@@ -2,12 +2,14 @@
 import type { PropType } from 'vue'
 
 defineProps({
-  image: { type: [String, Object, undefined] as PropType<any>, required: true }
+  images: { type: Array as PropType<any[]>, required: true }
 })
 </script>
 
 <template>
   <div style="height: 600px" class="mb-8">
-    <v-img cover :src="image" />
+    <v-carousel interval="4999" cycle hide-delimiters :show-arrows="false">
+      <v-carousel-item v-for="(item, i) in images" :key="i" :src="item" cover></v-carousel-item>
+    </v-carousel>
   </div>
 </template>

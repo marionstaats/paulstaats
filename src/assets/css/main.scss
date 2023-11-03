@@ -58,3 +58,16 @@ a {
 .slider-enter-to {
     transform: translateY(0);
 }
+
+// Carousel transition speed
+.v-window {
+    &-x-transition,
+    &-x-reverse-transition,
+    &-y-transition,
+    &-y-reverse-transition {
+        &-enter-active,
+        &-leave-active {
+            transition: 6s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+        }
+    }
+}
