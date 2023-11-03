@@ -4,6 +4,8 @@ import ProjectNavigation from '@/components/ProjectNavigation.vue'
 import ProjectText from '@/components/ProjectText.vue'
 import Flipbook from '@/components/Flipbook.vue'
 import Page from '@/components/Page.vue'
+import video from '@/assets/videos/IMG_3967.mp4'
+import audio from '@/assets/audio/Sabastraat.mp3'
 
 defineProps({
   projectName: { type: String, default: 'Some Project' }
@@ -36,6 +38,18 @@ defineProps({
         <div>
           <v-row class="mb-4"><Flipbook /></v-row
           ><v-row class="mb-4"><v-img src="https://picsum.photos/400/200" /></v-row>
+          <v-row class="mb-4"
+            ><video width="700" height="400" controls>
+              <source :src="video" type="video/mp4" />
+              Uw browser ondersteunt het video element niet.
+            </video></v-row
+          >
+          <v-row class="mb-4 d-flex justify-center"
+            ><audio controls>
+              <source :src="audio" type="audio/mpeg" />
+              Uw browser ondersteunt het audio element niet.
+            </audio></v-row
+          >
         </div>
       </template>
       <template v-slot:footer
