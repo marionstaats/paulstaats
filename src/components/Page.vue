@@ -2,11 +2,11 @@
 
 <template>
   <v-container>
-    <v-row>
-      <v-col cols="4" class="mr-9">
+    <v-row no-gutters>
+      <v-col cols="3" class="mr-8">
         <slot name="text" />
       </v-col>
-      <v-col cols="7"><slot name="image" /></v-col>
+      <v-col cols="8"><slot name="image" /></v-col>
     </v-row>
     <slot name="footer" />
   </v-container>

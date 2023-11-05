@@ -11,6 +11,8 @@ defineProps({
   projectName: { type: String, default: 'Some Project' }
   // project: { type: Object as PropType<Project> } //, required: true
 })
+
+const marginBottom = 'mb-6'
 </script>
 
 <template>
@@ -36,15 +38,15 @@ defineProps({
       </template>
       <template v-slot:image>
         <div>
-          <v-row class="mb-4"><Flipbook /></v-row
-          ><v-row class="mb-4"><v-img src="https://picsum.photos/400/200" /></v-row>
-          <v-row class="mb-4"
-            ><video width="700" height="400" controls>
+          <v-row :class="marginBottom"><v-img src="https://picsum.photos/800/450" /></v-row>
+          <v-row :class="marginBottom"
+            ><video width="800" height="450" controls>
               <source :src="video" type="video/mp4" />
               Uw browser ondersteunt het video element niet.
             </video></v-row
           >
-          <v-row class="mb-4 d-flex justify-center"
+          <v-row :class="marginBottom"><Flipbook /></v-row>
+          <v-row class="d-flex justify-center" :class="marginBottom"
             ><audio controls>
               <source :src="audio" type="audio/mpeg" />
               Uw browser ondersteunt het audio element niet.

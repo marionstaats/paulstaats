@@ -8,9 +8,9 @@ import Flipbook from 'flipbook-vue'
 import { computed, ref } from 'vue'
 
 const pages = [
-  'https://picsum.photos/300/200',
-  'https://picsum.photos/300/201',
-  'https://picsum.photos/300/202'
+  'https://picsum.photos/800/450',
+  'https://picsum.photos/800/451',
+  'https://picsum.photos/800/452'
 ]
 const currentPage = ref(0)
 const showRightTriangle = ref(true)
@@ -35,40 +35,32 @@ const flipLeft = (flipbook: any) => {
 </script>
 
 <template>
-  <v-card flat rounded="0"
-    ><flipbook
-      class="flipbook"
-      style="width: 300px; height: 200px"
-      v-slot="flipbook"
-      singlePage
-      :pages="pages"
-    >
-      <v-overlay :modelValue="true" contained persistent scrim="transparent">
-        <div
-          v-if="showRightTriangle"
-          style="
-            cursor: pointer;
-            position: absolute;
-            top: 180px;
-            left: 280px;
-            height: 20px;
-            width: 20px;
-          "
-        >
-          <v-img :src="triangle" @click="flipRight(flipbook)" />
-        </div>
-        <div
-          v-if="!showRightTriangle"
-          style="
-            cursor: pointer;
-            position: absolute;
-            top: 180px;
-            left: 0;
-            height: 20px;
-            width: 20px;
-          "
-        >
-          <v-img :src="triangleLeft" @click="() => flipLeft(flipbook)" />
-        </div> </v-overlay></flipbook
-  ></v-card>
+  <flipbook
+    class="flipbook"
+    style="width: 800px; height: 450px"
+    v-slot="flipbook"
+    singlePage
+    :pages="pages"
+  >
+    <v-overlay :modelValue="true" contained persistent scrim="transparent">
+      <div
+        v-if="showRightTriangle"
+        style="
+          cursor: pointer;
+          position: absolute;
+          top: 410px;
+          left: 760px;
+          height: 40px;
+          width: 40px;
+        "
+      >
+        <v-img :src="triangle" @click="flipRight(flipbook)" />
+      </div>
+      <div
+        v-if="!showRightTriangle"
+        style="cursor: pointer; position: absolute; top: 410px; left: 0; height: 40px; width: 40px"
+      >
+        <v-img :src="triangleLeft" @click="() => flipLeft(flipbook)" />
+      </div> </v-overlay
+  ></flipbook>
 </template>

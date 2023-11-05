@@ -60,12 +60,14 @@ a {
 }
 
 // Carousel transition speed
-.v-window {
-    &-x-transition,
-    &-x-reverse-transition {
-        &-enter-active,
-        &-leave-active {
-            transition: 4s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+.cover-image {
+    .v-window {
+        &-x-transition,
+        &-x-reverse-transition {
+            &-enter-active,
+            &-leave-active {
+                transition: 4s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+            }
         }
     }
 }
