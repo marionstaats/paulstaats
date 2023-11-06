@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import type { Project } from '@/composables/projects'
-import { Routes } from '@/router/routes'
-import router from '@/router'
+import smallImage from '@/assets/images/work/0-BPVelpNoord.png'
+
+defineEmits(['click'])
 
 defineProps({
   modelValue: { type: Boolean, default: false },
@@ -20,19 +21,12 @@ defineProps({
 <template>
   <v-hover>
     <template v-slot:default="{ isHovering, props }">
-      <v-card
-        v-bind="props"
-        class="project-card"
-        @click="
-          () => router.push({ name: Routes.Project, params: { projectName: 'Some project' } })
-        "
-      >
+      <v-card v-bind="props" class="project-card" @click="$emit('click')">
         <v-card-item>
-          <v-img src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"></v-img>
+          <v-img :src="smallImage"></v-img>
         </v-card-item>
         <v-card-title>
-          <h2 class="text-h6">{{ project?.title || 'some title' }}</h2>
-          {{ project?.subTitle }}
+          {{ project?.title || 'some title' }}
         </v-card-title>
         <v-overlay
           :modelValue="isHovering"

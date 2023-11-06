@@ -6,6 +6,8 @@ import Flipbook from '@/components/Flipbook.vue'
 import Page from '@/components/Page.vue'
 import video from '@/assets/videos/IMG_3967.mp4'
 import audio from '@/assets/audio/Sabastraat.mp3'
+import coverImage from '@/assets/images/work/0-Dorpszicht Terwolde.png'
+import smallImage from '@/assets/images/work/0-BPVelpNoord.png'
 
 defineProps({
   projectName: { type: String, default: 'Some Project' }
@@ -18,7 +20,7 @@ const marginBottom = 'mb-6'
 <template>
   <div>
     <div style="height: 600px; width: 100vw" class="mb-8">
-      <v-img cover src="https://picsum.photos/2000/1000" class="d-flex align-center justify-center"
+      <v-img cover :src="coverImage" class="d-flex align-center justify-center"
         ><h1
           style="
             color: white;
@@ -38,7 +40,7 @@ const marginBottom = 'mb-6'
       </template>
       <template v-slot:image>
         <div>
-          <v-row :class="marginBottom"><v-img src="https://picsum.photos/800/450" /></v-row>
+          <v-row :class="marginBottom"><v-img :src="smallImage" /></v-row>
           <v-row :class="marginBottom"
             ><video width="800" height="450" controls>
               <source :src="video" type="video/mp4" />
