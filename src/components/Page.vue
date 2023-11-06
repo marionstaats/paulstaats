@@ -2,7 +2,7 @@
 
 <template>
   <v-container>
-    <v-row no-gutters>
+    <v-row>
       <v-col cols="3" class="mr-8">
         <slot name="text" />
       </v-col>
