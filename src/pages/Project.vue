@@ -5,7 +5,6 @@ import ProjectText from '@/components/ProjectText.vue'
 import Flipbook from '@/components/Flipbook.vue'
 import Page from '@/components/Page.vue'
 import video from '@/assets/videos/IMG_3967.mp4'
-import audio from '@/assets/audio/Sabastraat.mp3'
 import coverImage from '@/assets/images/work/0-Dorpszicht Terwolde.png'
 import smallImage from '@/assets/images/work/0-BPVelpNoord.png'
 
@@ -48,12 +47,6 @@ const marginBottom = 'mb-6'
             </video></v-row
           >
           <v-row :class="marginBottom"><Flipbook /></v-row>
-          <v-row class="d-flex justify-center" :class="marginBottom"
-            ><audio controls>
-              <source :src="audio" type="audio/mpeg" />
-              Uw browser ondersteunt het audio element niet.
-            </audio></v-row
-          >
         </div>
       </template>
       <template v-slot:footer
