@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import cv from '@/assets/documents/Curriculum Vitae Pss-061123.pdf'
+</script>
 
 <template>
   <v-container>
@@ -29,8 +31,6 @@
       <div class="mb-2">– Lid van Groep Middachten</div>
       <div class="mb-2">– Docent Urban Design, Helicon Velp</div>
     </div>
-    <v-btn color="primary" append-icon="mdi-download" href="src/assets/documents/cv.docx"
-      >Download volledige CV</v-btn
-    >
+    <v-btn color="primary" append-icon="mdi-download" :href="cv">Download volledige CV</v-btn>
   </v-container>
 </template>

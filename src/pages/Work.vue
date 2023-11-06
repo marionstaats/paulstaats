@@ -5,13 +5,13 @@ import { workNav } from '@/composables/navigation'
 import router from '@/router'
 import { Routes } from '@/router/routes'
 
-const tab = ref(0)
+const tab = ref(1)
 </script>
 
 <template>
   <div style="margin: 0 150px">
     <v-tabs slider-color="primary" v-model="tab" align-tabs="center">
-      <v-tab v-for="({ title }, i) in workNav" :key="i" :value="i">{{ title }}</v-tab>
+      <v-tab v-for="({ title }, i) in workNav" :key="i + 1" :value="i + 1">{{ title }}</v-tab>
     </v-tabs>
     <v-window v-model="tab">
       <v-window-item v-for="n in 5" :key="n" :value="n">
