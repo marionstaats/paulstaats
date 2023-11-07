@@ -1,16 +1,20 @@
 <script setup lang="ts">
 import CoverImage from '@/components/CoverImage.vue'
+import dekkerswald from '@/assets/images/home/dekkerswald.png'
+import inrichtingsplan from '@/assets/images/home/inrichtingsplan.png'
+import velp from '@/assets/images/home/velp.png'
+import terwolde from '@/assets/images/home/terwolde.png'
+import snelfietsroute from '@/assets/images/home/snelfietsroute.png'
 </script>
 
 <template>
   <div>
-    <CoverImage
-      :images="[
-        'https://picsum.photos/2000/1000',
-        'https://picsum.photos/2000/1001',
-        'https://picsum.photos/2000/999'
-      ]"
-    />
-    <v-container> Paul Staats en co - Stedebouwkundige plannen voor al uw tuinhuisjes </v-container>
+    <CoverImage :images="[dekkerswald, velp, snelfietsroute, terwolde, inrichtingsplan]" />
+    <v-container
+      ><h2 class="font-weight-bold">
+        Persoonlijk stedebouwkundig bureau voor opgaves in stad en land, veelzijdig door kennis,
+        ervaring en netwerk.
+      </h2></v-container
+    >
   </div>
 </template>
