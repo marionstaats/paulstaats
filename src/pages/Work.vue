@@ -9,7 +9,7 @@ const tab = ref(1)
 </script>
 
 <template>
-  <div style="margin: 0 150px">
+  <v-container>
     <v-tabs slider-color="primary" v-model="tab" align-tabs="center">
       <v-tab v-for="({ title }, i) in workNav" :key="i + 1" :value="i + 1">{{ title }}</v-tab>
     </v-tabs>
@@ -29,5 +29,5 @@ const tab = ref(1)
         </v-container>
       </v-window-item>
     </v-window>
-  </div>
+  </v-container>
 </template>

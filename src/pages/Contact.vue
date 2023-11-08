@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import location from '@/assets/images/locatie.jpeg'
+import location from '@/assets/images/contact/locatie.jpeg'
 import CoverImage from '@/components/CoverImage.vue'
 </script>
 
 <template>
   <div>
-    <CoverImage :images="[location]" />
+    <CoverImage :images="[location]" class="mb-8" />
     <div class="d-flex justify-space-around">
       <div>
         <h2 class="mb-2">Bureau</h2>

@@ -1,32 +1,27 @@
-<script setup lang="ts">
-import paul from '@/assets/images/profile-paul.jpeg'
-import Page from '@/components/Page.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <Page>
-    <template v-slot:text>
-      <div>
-        Mijn gedrevenheid in het stedebouwkundig vak komt voort uit grensoverschrijdend gedrag. Geen
-        verschillen tussen wonen, werken en ontspannen; vormgeving is gekoppeld aan functie; voor
-        mij bestaan ze naast elkaar en lopen ze als vanzelf in elkaar over. Daarom geniet ik van
-        mijn werk. En dat doe ik graag met mensen waarmee het klikt. Mijn plannen voor de
-        leefomgeving zijn om bij weg te dromen, én om te realiseren. Ze geven plezier en verbeteren
-        de omgeving. Goede plannen voor stad en landschap zijn cruciaal voor het welzijn van de
-        mens. Stedebouw is voor mij een beeldende discipline. Ik bijt me vast in de opgave met een
-        degelijke analyse; pas dan krijgt een plan vanzelfsprekendheid. Het plan moet geworteld zijn
-        in de omgeving en ten dienste staan van de gebruikers. Het detail is verklaarbaar vanuit het
-        grote geheel. Er zijn dan minder woorden nodig voor de uitleg. Dit is bepalend voor mijn
-        handschrift. Ik voel mij goed bij complexe ruimtelijke situaties en uiteenlopende belangen.
-        Mijn opdrachtgever kan komen met een moeilijke ruimtelijke opgave, maar hij weet waar hij
-        naar toe wil. Samen zoeken we naar een creatieve oplossing. Ik werk graag als zelfstandige,
-        na een ruime periode bij verschillende bureaus en gemeenten. Ik kies voor een persoonlijke
-        benadering naar de opdrachtgever toe en wil me verdiepen in de belevingswereld van een
-        ander. Door een netwerk van specialisten kan ik uiteenlopende opgaves aan en snel inspelen
-        op de vraag. Het kan gaan om een herinrichting van een straat, een bebouwingsstudie of een
-        bestemmingsplan.
-      </div>
-    </template>
-    <template v-slot:image><v-img :src="paul" /></template>
-  </Page>
+  <v-container>
+    <div class="mb-4">
+      Mijn stedebouwkundige gedrevenheid komt voort uit een brede interesse hoe mensen samenleven.
+      Voor mij zijn er geen verschillen tussen wonen, werken en ontspannen; ze bestaan naast elkaar
+      en lopen als vanzelf in elkaar over. Dit mag ik vormgeven, stedebouw is een beeldende
+      discipline. En dat doe ik met mensen waarmee het klikt, ik kan het niet alleen. Na een ruime
+      periode bij bureaus en gemeenten werk ik nu graag met een persoonlijke benadering naar de
+      opdrachtgever. Door samenwerking met collega’s en een netwerk van specialisten kan ik
+      uiteenlopende opgaves aan en snel inspelen op de vraag. Het kan gaan om een herinrichting van
+      een straat, een bebouwingsstudie of een bestemmingsplan.
+    </div>
+    <div>
+      Ik voel mij goed bij complexe ruimtelijke situaties en uiteenlopende belangen. Mijn
+      opdrachtgever kan komen met een moeilijke opgave, samen zoeken we naar een creatieve
+      oplossing. Met de gebruikers moeten de plannen pas definitief worden, voor een ontwerper een
+      oefening in geduld. Mijn plannen voor de leefomgeving zijn om bij weg te dromen, èn om te
+      realiseren. Ze geven plezier en verbeteren de stad en het landschap. Ik bijt me daarbij vast
+      in de opgave met een degelijke analyse; pas dan krijgt een plan iets vanzelfsprekends. Het
+      plan moet ten dienste staan van de gebruikers en toch geworteld zijn in de omgeving. Duurzaam
+      uiteraard en dat begint bij minder gebruiken en produceren. Oftewel veel hergebruik van
+      bestaand vastgoed, transformatie van bebouwd gebied en het stimuleren van groene ruimtes.
+    </div>
+  </v-container>
 </template>

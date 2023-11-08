@@ -9,7 +9,10 @@ import snelfietsroute from '@/assets/images/home/snelfietsroute.png'
 
 <template>
   <div>
-    <CoverImage :images="[dekkerswald, velp, snelfietsroute, terwolde, inrichtingsplan]" />
+    <CoverImage
+      :images="[dekkerswald, velp, snelfietsroute, terwolde, inrichtingsplan]"
+      class="mb-8"
+    />
     <v-container
       ><h2 class="font-weight-bold">
         Persoonlijk stedebouwkundig bureau voor opgaves in stad en land, veelzijdig door kennis,

@@ -7,6 +7,7 @@ import Page from '@/components/Page.vue'
 import video from '@/assets/videos/IMG_3967.mp4'
 import coverImage from '@/assets/images/work/0-Dorpszicht Terwolde.png'
 import smallImage from '@/assets/images/work/0-BPVelpNoord.png'
+import CoverImage from '@/components/CoverImage.vue'
 
 defineProps({
   projectName: { type: String, default: 'Some Project' }
@@ -18,21 +19,7 @@ const marginBottom = 'mb-6'
 
 <template>
   <div>
-    <div style="height: 600px; width: 100vw" class="mb-8">
-      <v-img cover :src="coverImage" class="d-flex align-center justify-center"
-        ><h1
-          style="
-            color: white;
-            font-size: 60px;
-            font-weight: 600;
-            text-transform: uppercase;
-            text-align: center;
-          "
-        >
-          {{ projectName }}
-        </h1></v-img
-      >
-    </div>
+    <CoverImage :images="[coverImage]" :title="projectName" class="mb-8" />
     <Page>
       <template v-slot:text>
         <ProjectText />
