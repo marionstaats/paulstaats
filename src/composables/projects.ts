@@ -1,5 +1,7 @@
+import type { WorkTypes } from '@/composables/navigation'
+
 export type Project = {
-  type: string[]
+  type: WorkTypes[]
   title: string
   subTitle?: string
   text: string
@@ -14,7 +16,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    type: ['', ''],
+    type: [],
     title: '',
     subTitle: '',
     text: '',
@@ -27,7 +29,7 @@ export const projects: Project[] = [
     music: ''
   },
   {
-    type: ['', ''],
+    type: [],
     title: '',
     subTitle: '',
     text: '',

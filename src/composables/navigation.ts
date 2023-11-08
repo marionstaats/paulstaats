@@ -6,12 +6,12 @@ import Clients from '@/components/profile/Clients.vue'
 import Inspiration from '@/components/profile/Inspiration.vue'
 
 export type Navigation = {
-  title: string | workTypes
+  title: string | WorkTypes
   to?: Routes
   component?: Component
 }
 
-export enum workTypes {
+export enum WorkTypes {
   ALL = 'ALLES',
   URBANISM = 'STEDEBOUW',
   PLANNING = 'PLANOLOGIE',
@@ -36,19 +36,19 @@ export const mainNav: Navigation[] = [
 
 export const workNav: Navigation[] = [
   {
-    title: workTypes.ALL
+    title: WorkTypes.ALL
   },
   {
-    title: workTypes.URBANISM
+    title: WorkTypes.URBANISM
   },
   {
-    title: workTypes.PLANNING
+    title: WorkTypes.PLANNING
   },
   {
-    title: workTypes.OUTSIDE
+    title: WorkTypes.OUTSIDE
   },
   {
-    title: workTypes.SAME
+    title: WorkTypes.SAME
   }
 ]
 

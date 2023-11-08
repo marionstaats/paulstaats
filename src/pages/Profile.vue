@@ -8,15 +8,17 @@ const tab = ref(0)
 </script>
 
 <template>
-  <CoverImage :images="[coverImage]" />
-  <v-container>
-    <v-tabs slider-color="primary" v-model="tab" align-tabs="center">
-      <v-tab v-for="({ title }, i) in profileNav" :key="i" :value="i">{{ title }}</v-tab>
-    </v-tabs>
-    <v-window v-model="tab">
-      <v-window-item v-for="({ component }, i) in profileNav" :key="i" :value="component">
-        <Component :is="component" />
-      </v-window-item>
-    </v-window>
-  </v-container>
+  <div>
+    <CoverImage :images="[coverImage]" />
+    <v-container>
+      <v-tabs slider-color="primary" v-model="tab" align-tabs="center">
+        <v-tab v-for="({ title }, i) in profileNav" :key="i" :value="i">{{ title }}</v-tab>
+      </v-tabs>
+      <v-window v-model="tab">
+        <v-window-item v-for="({ component }, i) in profileNav" :key="i" :value="component">
+          <Component :is="component" />
+        </v-window-item>
+      </v-window>
+    </v-container>
+  </div>
 </template>
