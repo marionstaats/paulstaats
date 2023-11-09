@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useThemeStore } from '@/stores/themeStore'
-import { useTheme } from 'vuetify'
 import router from '@/router'
 import { Routes } from '@/router/routes'
 import logo from '@/assets/images/logo-paul.png'
@@ -9,7 +8,6 @@ import signatureBlack from '@/assets/images/handtekening-ps-black.png'
 import { storeToRefs } from 'pinia'
 
 const themeStore = useThemeStore()
-const theme = useTheme()
 const { dark } = storeToRefs(themeStore)
 </script>
 

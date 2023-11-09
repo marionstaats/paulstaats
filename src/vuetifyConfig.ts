@@ -2,29 +2,25 @@
 import colors from 'vuetify/lib/util/colors'
 import '@mdi/font/css/materialdesignicons.css'
 
+const yellow = '#ffcc04'
+
 export default {
   theme: {
     themes: {
       light: {
         dark: false,
         colors: {
-          primary: '#ffcc04',
-          secondary: colors.red.lighten4,
+          primary: yellow,
           text: colors.shades.black,
-
-          background: colors.shades.white,
-          backgroundNav: colors.grey.lighten4
+          background: colors.shades.white
         }
       },
       dark: {
         dark: true,
         colors: {
-          primary: '#ffcc04',
-          secondary: colors.red.lighten4,
+          primary: yellow,
           text: colors.shades.white,
-
-          background: colors.grey.darken4,
-          backgroundNav: colors.grey.darken3
+          background: colors.grey.darken4
         }
       }
     }

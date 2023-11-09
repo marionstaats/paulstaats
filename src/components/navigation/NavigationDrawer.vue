@@ -1,21 +1,18 @@
 <script setup lang="ts">
 import { VNavigationDrawer } from 'vuetify/components'
 import { mainNav } from '@/composables/navigation'
-import { useThemeStore } from '@/stores/themeStore'
-import { storeToRefs } from 'pinia'
 
 defineProps({
   modelValue: { type: Boolean, default: false }
 })
-
-const themeStore = useThemeStore()
-const { dark } = storeToRefs(themeStore)
+defineEmits(['update:modelValue'])
 </script>
 
 <template>
   <v-navigation-drawer
     :modelValue="modelValue"
-    class="bg-backgroundNav"
+    @update:modelValue="(value: boolean) => $emit('update:modelValue', value)"
+    class="bg-background"
     temporary
     :permanent="false"
   >

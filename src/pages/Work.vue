@@ -10,7 +10,7 @@ const tab = ref(1)
 
 <template>
   <v-container>
-    <v-tabs slider-color="primary" v-model="tab" align-tabs="center">
+    <v-tabs show-arrows slider-color="primary" v-model="tab" align-tabs="center">
       <v-tab v-for="({ title }, i) in workNav" :key="i + 1" :value="i + 1">{{ title }}</v-tab>
     </v-tabs>
     <v-window v-model="tab">

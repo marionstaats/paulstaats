@@ -3,11 +3,10 @@ import { clients } from '@/composables/clients'
 </script>
 
 <template>
-  <v-container>
-    <div class="d-flex mb-2" v-for="{ location, description } in clients" :key="location">
-      <div class="font-weight-bold mr-2">{{ location }}</div>
-      <div>-</div>
-      <div class="ml-2">{{ description }}</div>
-    </div>
+  <v-container fluid>
+    <v-row v-for="{ location, description } in clients" :key="location">
+      <v-col xs="1" sm="3" class="font-weight-bold">{{ location }}</v-col
+      ><v-col>{{ description }}</v-col>
+    </v-row>
   </v-container>
 </template>

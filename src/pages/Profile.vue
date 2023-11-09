@@ -11,7 +11,13 @@ const tab = ref(0)
   <div>
     <CoverImage :images="[coverImage]" />
     <v-container>
-      <v-tabs style="height: 48px" slider-color="primary" v-model="tab" align-tabs="center">
+      <v-tabs
+        style="height: 48px"
+        slider-color="primary"
+        v-model="tab"
+        align-tabs="center"
+        show-arrows
+      >
         <v-tab v-for="({ title }, i) in profileNav" :key="i" :value="i">{{ title }}</v-tab>
       </v-tabs>
       <v-window v-model="tab">
