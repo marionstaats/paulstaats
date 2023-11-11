@@ -15,6 +15,7 @@ const props = defineProps({
 })
 
 const marginBottom = 'mb-6'
+const marginFooter = isMobile ? 'mx-2' : ''
 
 const projectIndex = computed(() =>
   projects.findIndex((project) => project.title === props.projectName)
@@ -50,7 +51,9 @@ onUpdated(() => window.scrollTo(0, 0))
       </template>
       <template v-slot:image>
         <div>
-          <v-row :class="marginBottom"><v-img :src="getImageUrl(project?.image)" /></v-row>
+          <v-row :class="marginBottom"
+            ><v-img :src="getImageUrl(project?.image, `work/${project.title}`)"
+          /></v-row>
           <v-row v-if="project?.video" :class="marginBottom"
             ><video width="800" height="450" controls>
               <source :src="project.video" type="video/mp4" />
@@ -63,7 +66,8 @@ onUpdated(() => window.scrollTo(0, 0))
         </div>
       </template>
       <template v-slot:footer
-        ><v-row><Sharing /></v-row> <v-row><ProjectNavigation :index="projectIndex" /></v-row
+        ><v-row :class="marginFooter"><Sharing /></v-row>
+        <v-row :class="marginFooter"><ProjectNavigation :index="projectIndex" /></v-row
       ></template>
     </Page>
   </div>
