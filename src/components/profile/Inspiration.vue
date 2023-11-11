@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ProjectCard from '@/components/ProjectCard.vue'
 import { ref } from 'vue'
-import smallImage from '@/assets/images/work/0-BPVelpNoord.png'
+import { getImageUrl } from '@/composables/getImage'
 
 const dialog = ref(false)
 </script>
@@ -11,12 +11,17 @@ const dialog = ref(false)
     <v-container fluid>
       <v-row>
         <v-col v-for="i in 12" :key="i" cols="12" md="3">
-          <ProjectCard @click="() => (dialog = true)" />
+          <ProjectCard
+            title="Inspiratie jaja"
+            imageFolder="inspiration"
+            image="0-BPVelpNoord.png"
+            @click="() => (dialog = true)"
+          />
         </v-col>
       </v-row>
     </v-container>
     <v-dialog v-model="dialog" width="80vw">
-      <v-img :src="smallImage" />
+      <v-img :src="getImageUrl('0-BPVelpNoord.png', 'inspiration')" />
     </v-dialog>
   </div>
 </template>

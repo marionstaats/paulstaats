@@ -1,10 +1,10 @@
 import { Routes } from '@/router/routes'
 import type { Component } from 'vue'
-import Profile from '@/components/profile/Profile.vue'
 import CV from '@/components/profile/CV.vue'
 import Clients from '@/components/profile/Clients.vue'
 import Inspiration from '@/components/profile/Inspiration.vue'
 import Partners from '@/components/profile/Partners.vue'
+import ProfileComp from '@/components/profile/ProfileComp.vue'
 
 export type Navigation = {
   title: string | WorkTypes
@@ -56,7 +56,7 @@ export const workNav: Navigation[] = [
 export const profileNav: Navigation[] = [
   {
     title: 'PROFIEL',
-    component: Profile
+    component: ProfileComp
   },
   {
     title: 'CURRICULUM VITAE',

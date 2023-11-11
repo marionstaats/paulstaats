@@ -9,7 +9,7 @@ import CoverImage from '@/components/CoverImage.vue'
 import { projects } from '@/composables/projects'
 import { isMobile } from '@/composables/isMobile'
 import { getImageUrl } from '@/composables/getImage'
-import { computed, onMounted, onUpdated } from 'vue'
+import { computed, onUpdated } from 'vue'
 
 const props = defineProps({
   projectName: { type: String, required: true }
@@ -34,29 +34,29 @@ onUpdated(() => window.scrollTo(0, 0))
   <div>
     <CoverImage
       :images="[coverImageUrl]"
-      :title="project.title"
+      :title="project?.title"
       :class="isMobile ? 'mb-2' : 'mb-8'"
     />
     <Page>
       <template v-slot:text>
         <ProjectText
-          :subtitle="project.subTitle"
-          :text="project.text"
-          :link="project.link"
-          :linkText="project.linkText"
-          :audio="project.music"
+          :subtitle="project?.subTitle"
+          :text="project?.text"
+          :link="project?.link"
+          :linkText="project?.linkText"
+          :audio="project?.music"
         />
       </template>
       <template v-slot:image>
         <div>
-          <v-row :class="marginBottom"><v-img :src="getImageUrl(project.image)" /></v-row>
-          <v-row v-if="project.video" :class="marginBottom"
+          <v-row :class="marginBottom"><v-img :src="getImageUrl(project?.image)" /></v-row>
+          <v-row v-if="project?.video" :class="marginBottom"
             ><video width="800" height="450" controls>
               <source :src="video" type="video/mp4" />
               Uw browser ondersteunt het video element niet.
             </video></v-row
           >
-          <v-row v-if="project.flipbookImages?.length > 0" :class="marginBottom"
+          <v-row v-if="project?.flipbookImages" :class="marginBottom"
             ><Flipbook :pages="flipBookImagesUrl"
           /></v-row>
         </div>

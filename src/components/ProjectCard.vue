@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
-import type { Project } from '@/composables/projects'
 import { getImageUrl } from '@/composables/getImage'
 
 defineEmits(['click'])
 
 defineProps({
   modelValue: { type: Boolean, default: false },
-  project: { type: Object as PropType<Project>, required: true }
+  image: { type: String, required: true },
+  imageFolder: { type: String, required: true },
+  title: { type: String, required: true }
 })
 </script>
 
@@ -16,10 +16,10 @@ defineProps({
     <template v-slot:default="{ isHovering, props }">
       <v-card v-bind="props" class="project-card" @click="$emit('click')">
         <v-card-item>
-          <v-img :src="getImageUrl(project.image)"></v-img>
+          <v-img :src="getImageUrl(image, imageFolder)"></v-img>
         </v-card-item>
         <v-card-title>
-          {{ project.title }}
+          {{ title }}
         </v-card-title>
         <v-overlay
           :modelValue="isHovering"

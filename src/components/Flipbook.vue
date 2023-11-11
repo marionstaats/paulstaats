@@ -9,7 +9,7 @@ import { computed, ref } from 'vue'
 import type { PropType } from 'vue'
 
 const props = defineProps({
-  pages: { type: Array as PropType<Array<String>>, default: () => [] }
+  pages: { type: Array as PropType<Array<string>>, default: () => [] }
 })
 
 const currentPage = ref(0)

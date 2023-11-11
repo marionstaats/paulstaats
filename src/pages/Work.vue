@@ -31,7 +31,9 @@ const activeProjects = (workType: WorkTypes) =>
               md="3"
             >
               <ProjectCard
-                :project="project"
+                :title="project.title"
+                imageFolder="work"
+                :image="project.image"
                 @click="
                   () =>
                     router.push({

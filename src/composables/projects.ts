@@ -9,7 +9,7 @@ export type Project = {
   link?: string
   linkText?: string
   coverImage: string
-  image?: string
+  image: string
   flipbookImages?: string[]
   video?: string
   music?: string
