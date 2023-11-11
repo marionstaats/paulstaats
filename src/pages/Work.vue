@@ -32,7 +32,7 @@ const activeProjects = (workType: WorkTypes) =>
             >
               <ProjectCard
                 :title="project.title"
-                imageFolder="work"
+                :imageFolder="`work/${project.title}`"
                 :image="project.image"
                 @click="
                   () =>

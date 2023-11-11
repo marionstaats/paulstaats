@@ -2,9 +2,9 @@
 import { useThemeStore } from '@/stores/themeStore'
 import router from '@/router'
 import { Routes } from '@/router/routes'
-import logo from '@/assets/images/logo-paul.png'
-import signatureWhite from '@/assets/images/handtekening-ps-wit.png'
-import signatureBlack from '@/assets/images/handtekening-ps-black.png'
+import logo from '@/assets/images/logo/logo-paul.png'
+import signatureWhite from '@/assets/images/logo/handtekening-ps-wit.png'
+import signatureBlack from '@/assets/images/logo/handtekening-ps-black.png'
 import { storeToRefs } from 'pinia'
 
 const themeStore = useThemeStore()

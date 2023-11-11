@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { useThemeStore } from '@/stores/themeStore'
-import triangleRightBlack from '@/assets/images/triangle-right-black.svg'
-import triangleRightWhite from '@/assets/images/triangle-right-white.svg'
-import triangleLeftBlack from '@/assets/images/triangle-left-black.svg'
-import triangleLeftWhite from '@/assets/images/triangle-left-white.svg'
+import triangleRightBlack from '@/assets/images/logo/triangle-right-black.svg'
+import triangleRightWhite from '@/assets/images/logo/triangle-right-white.svg'
+import triangleLeftBlack from '@/assets/images/logo/triangle-left-black.svg'
+import triangleLeftWhite from '@/assets/images/logo/triangle-left-white.svg'
 import Flipbook from 'flipbook-vue'
 import { computed, ref } from 'vue'
 import type { PropType } from 'vue'

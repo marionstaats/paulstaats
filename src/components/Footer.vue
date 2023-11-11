@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { isMobile } from '@/composables/isMobile'
-import signatureBlack from '@/assets/images/handtekening-ps-black.png'
-import signatureWhite from '@/assets/images/handtekening-ps-wit.png'
+import signatureBlack from '@/assets/images/logo/handtekening-ps-black.png'
+import signatureWhite from '@/assets/images/logo/handtekening-ps-wit.png'
 import { useThemeStore } from '@/stores/themeStore'
 import { storeToRefs } from 'pinia'
-import triangleBlack from '@/assets/images/triangle-right-black.svg'
-import triangleWhite from '@/assets/images/triangle-right-white.svg'
+import triangleBlack from '@/assets/images/logo/triangle-right-black.svg'
+import triangleWhite from '@/assets/images/logo/triangle-right-white.svg'
 
 const themeStore = useThemeStore()
 const { dark } = storeToRefs(themeStore)

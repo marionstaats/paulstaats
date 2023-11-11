@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import triangleLeftMiddle from '@/assets/images/triangle-left-middle.svg'
-import triangleRightMiddle from '@/assets/images/triangle-right-middle.svg'
+import triangleLeftMiddle from '@/assets/images/logo/triangle-left-middle.svg'
+import triangleRightMiddle from '@/assets/images/logo/triangle-right-middle.svg'
 import router from '@/router'
 import { Routes } from '@/router/routes'
 import { projects } from '@/composables/projects'

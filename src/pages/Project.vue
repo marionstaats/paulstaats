@@ -4,7 +4,6 @@ import ProjectNavigation from '@/components/ProjectNavigation.vue'
 import ProjectText from '@/components/ProjectText.vue'
 import Flipbook from '@/components/Flipbook.vue'
 import Page from '@/components/Page.vue'
-import video from '@/assets/videos/IMG_3967.mp4'
 import CoverImage from '@/components/CoverImage.vue'
 import { projects } from '@/composables/projects'
 import { isMobile } from '@/composables/isMobile'
@@ -23,9 +22,11 @@ const projectIndex = computed(() =>
 const project = computed(() => projects[projectIndex.value])
 
 const flipBookImagesUrl = computed(() =>
-  project.value?.flipbookImages?.map((image: string) => getImageUrl(image))
+  project.value?.flipbookImages?.map((image: string) =>
+    getImageUrl(image, `work/${project.value.title}`)
+  )
 )
-const coverImageUrl = getImageUrl(project.value?.coverImage)
+const coverImageUrl = getImageUrl(project.value?.coverImage, `work/${project.value.title}`)
 
 onUpdated(() => window.scrollTo(0, 0))
 </script>
@@ -52,7 +53,7 @@ onUpdated(() => window.scrollTo(0, 0))
           <v-row :class="marginBottom"><v-img :src="getImageUrl(project?.image)" /></v-row>
           <v-row v-if="project?.video" :class="marginBottom"
             ><video width="800" height="450" controls>
-              <source :src="video" type="video/mp4" />
+              <source :src="project.video" type="video/mp4" />
               Uw browser ondersteunt het video element niet.
             </video></v-row
           >
