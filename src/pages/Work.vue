@@ -4,6 +4,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
 import { workNav } from '@/composables/navigation'
 import router from '@/router'
 import { Routes } from '@/router/routes'
+import { projects } from '@/composables/projects'
 
 const tab = ref(1)
 </script>
@@ -17,11 +18,15 @@ const tab = ref(1)
       <v-window-item v-for="n in 5" :key="n" :value="n">
         <v-container fluid>
           <v-row>
-            <v-col v-for="i in 12" :key="i" cols="12" md="3">
+            <v-col v-for="(project, i) in projects" :key="i" cols="12" md="3">
               <ProjectCard
+                :project="project"
                 @click="
                   () =>
-                    router.push({ name: Routes.Project, params: { projectName: 'Some project' } })
+                    router.push({
+                      name: Routes.Project,
+                      params: { projectName: project.title }
+                    })
                 "
               />
             </v-col>

@@ -4,6 +4,7 @@ import Profile from '@/components/profile/Profile.vue'
 import CV from '@/components/profile/CV.vue'
 import Clients from '@/components/profile/Clients.vue'
 import Inspiration from '@/components/profile/Inspiration.vue'
+import Partners from '@/components/profile/Partners.vue'
 
 export type Navigation = {
   title: string | WorkTypes
@@ -63,7 +64,7 @@ export const profileNav: Navigation[] = [
   },
   {
     title: 'PARTNERS',
-    component: Clients
+    component: Partners
   },
   {
     title: 'OPDRACHTGEVERS',

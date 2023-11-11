@@ -5,13 +5,14 @@ import inrichtingsplan from '@/assets/images/home/inrichtingsplan.png'
 import velp from '@/assets/images/home/velp.png'
 import terwolde from '@/assets/images/home/terwolde.png'
 import snelfietsroute from '@/assets/images/home/snelfietsroute.png'
+import { isMobile } from '@/composables/isMobile'
 </script>
 
 <template>
   <div>
     <CoverImage
       :images="[dekkerswald, velp, snelfietsroute, terwolde, inrichtingsplan]"
-      class="mb-8"
+      :class="isMobile ? 'mb-2' : 'mb-8'"
     />
     <v-container
       ><h2 class="font-weight-bold">

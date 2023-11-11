@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { profileNav } from '@/composables/navigation'
-import coverImage from '@/assets/images/work/0-Dorpszicht Terwolde.png'
+import contact from '@/assets/images/profile/contactPss.png'
+import bouwers from '@/assets/images/profile/foto stedebouwers.png'
+import weusthag from '@/assets/images/profile/Weusthagstr3-.jpg'
 import CoverImage from '@/components/CoverImage.vue'
 
 const tab = ref(0)
@@ -9,7 +11,7 @@ const tab = ref(0)
 
 <template>
   <div>
-    <CoverImage :images="[coverImage]" />
+    <CoverImage :images="[contact, bouwers, weusthag]" />
     <v-container>
       <v-tabs
         style="height: 48px"

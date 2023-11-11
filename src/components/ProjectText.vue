@@ -1,27 +1,29 @@
 <script setup lang="ts">
-import audio from '@/assets/audio/Sabastraat.mp3'
+defineProps({
+  subtitle: { type: String },
+  text: { type: String },
+  link: { type: String },
+  linkText: { type: String },
+  music: { type: String }
+})
 </script>
 
 <template>
   <div>
-    <h2 class="mb-6">Some subtitle</h2>
-    <div class="mb-6">
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-      printer took a galley of type and scrambled it to make a type specimen book. It has survived
-      not only five centuries, but also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-      including versions of Lorem Ip
+    <h2 v-if="subtitle" class="mb-6">{{ subtitle }}</h2>
+    <div class="mb-6" style="white-space: pre-wrap">
+      {{ text }}
     </div>
     <a
+      v-if="link"
       class="d-flex justify-center font-weight-bold mb-6"
-      href="https://paulstaats.com/"
+      :href="link"
       target="_blank"
-      >Some link to somewhere</a
+      >{{ linkText }}</a
     >
-    <div class="d-flex justify-center">
+    <div v-if="music" class="d-flex justify-center">
       <audio controls>
-        <source :src="audio" type="audio/mpeg" />
+        <source :src="music" type="audio/mpeg" />
         Uw browser ondersteunt het audio element niet.
       </audio>
     </div>

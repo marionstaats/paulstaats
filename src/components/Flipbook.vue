@@ -6,12 +6,12 @@ import triangleLeftBlack from '@/assets/images/triangle-left-black.svg'
 import triangleLeftWhite from '@/assets/images/triangle-left-white.svg'
 import Flipbook from 'flipbook-vue'
 import { computed, ref } from 'vue'
+import type { PropType } from 'vue'
 
-const pages = [
-  'https://picsum.photos/800/450',
-  'https://picsum.photos/800/451',
-  'https://picsum.photos/800/452'
-]
+const props = defineProps({
+  pages: { type: Array as PropType<Array<String>>, default: () => [] }
+})
+
 const currentPage = ref(0)
 const showRightTriangle = ref(true)
 
@@ -21,7 +21,7 @@ const triangleLeft = computed(() => (themeStore.dark ? triangleLeftBlack : trian
 const flipRight = (flipbook: any) => {
   flipbook.flipRight()
   currentPage.value += 1
-  if (currentPage.value === pages.length - 1) {
+  if (currentPage.value === props.pages?.length - 1) {
     showRightTriangle.value = false
   }
 }

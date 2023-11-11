@@ -21,6 +21,10 @@ export const clients: Client[] = [
     description: 'Bestemmingsplan en inrichtingsplan, Brummen'
   },
   {
+    location: 'Scholte op Reimer',
+    description: 'Diverse Ruimtelijke onderbouwingen in Vasse en Ootmarsum'
+  },
+  {
     location: 'Gemeente Rheden',
     description: 'Begeleiding inspraak herinrichting Van Kolplein, Velp'
   },
@@ -41,16 +45,16 @@ export const clients: Client[] = [
     description: 'Ontwerpstudies voor Huis Hamerden, De Nieuwhof en Beekenoord'
   },
   {
-    location: 'Hurenkamp Architecten',
-    description: 'Ruimtelijke Onderbouwingen voor kantoortransformaties in Arnhem'
+    location: 'Particulier',
+    description: 'Ontwerp en bestemmingsplan boerderij Lochemseweg 22 te Warnsveld'
   },
   {
     location: 'Gemeente Voorst',
     description: 'Massastudies Twello, Terwolde; plannen Dorpszicht en De Vecht'
   },
   {
-    location: 'Particulier',
-    description: 'Ontwerp en bouwplanbegeleiding voormalig agrarisch vastgoed in Brummen'
+    location: 'Hurenkamp Architecten',
+    description: 'Ruimtelijke Onderbouwingen voor kantoortransformaties in Arnhem'
   },
   {
     location: 'Gemeente Arnhem',
@@ -101,11 +105,23 @@ export const clients: Client[] = [
     description: 'Toekomstvisie Landgoed Deelerwoud te Hoenderloo, Apeldoorn'
   },
   {
+    location: 'Architect Berenbroek',
+    description: 'Diverse massastudies en ruimtelijke onderbouwingen te Nijmegen en Berg en Dal'
+  },
+  {
+    location: 'Ontwikkelaar',
+    description: 'Massastudies voor ouderenhuisvesting in Apeldoorn en Boxmeer'
+  },
+  {
     location: 'Landgoed Middachten',
     description: 'Bestemmingsplan met inrichtingsplan, De Steeg'
   },
   {
-    location: 'Werkorganisatie CGM',
+    location: 'Particulieren',
+    description: 'Massastudies ten behoeve van Tiny Houses'
+  },
+  {
+    location: 'Gemeente Land van Cuijk',
     description: 'Gedetacheerd als stedebouwkundige'
   },
   {
@@ -123,6 +139,11 @@ export const clients: Client[] = [
   {
     location: 'Ontwikkelaar',
     description: 'Ruimtelijke Onderbouwing Centrum Zaandam'
+  },
+  {
+    location: 'DAGnl',
+    description:
+      'Ontwerp, beeldkwaliteitsplan en bestemmingsplan recreatiepark ’t Maatveld te Almelo'
   },
   {
     location: 'Particulieren',
