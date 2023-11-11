@@ -5,6 +5,8 @@ import { Routes } from '@/router/routes'
 import Project from '@/pages/Project.vue'
 import Work from '@/pages/Work.vue'
 import Home from '@/pages/Home.vue'
+import Profile from '@/components/profile/Profile.vue'
+import Contact from '@/pages/Contact.vue'
 
 const router: Router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,12 +36,12 @@ const router: Router = createRouter({
     {
       path: '/profile',
       name: Routes.Profile,
-      component: () => import('@/pages/Profile.vue')
+      component: Profile
     },
     {
       path: '/contact',
       name: Routes.Contact,
-      component: () => import('@/pages/Contact.vue')
+      component: Contact
     }
   ]
 })
