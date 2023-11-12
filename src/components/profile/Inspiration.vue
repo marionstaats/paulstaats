@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ProjectCard from '@/components/ProjectCard.vue'
 import { ref } from 'vue'
-import { getImageUrl } from '@/composables/getImage'
+import { getImageUrl } from '@/composables/getSrcURL'
 
 const dialog = ref(false)
 </script>

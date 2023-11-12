@@ -7,7 +7,7 @@ import Page from '@/components/Page.vue'
 import CoverImage from '@/components/CoverImage.vue'
 import { projects } from '@/composables/projects'
 import { isMobile } from '@/composables/isMobile'
-import { getImageUrl } from '@/composables/getImage'
+import { getImageUrl, getVideoUrl } from '@/composables/getSrcURL'
 import { computed, onUpdated } from 'vue'
 
 const props = defineProps({
@@ -28,6 +28,9 @@ const flipBookImagesUrl = computed(() =>
   )
 )
 const coverImageUrl = getImageUrl(project.value?.coverImage, `work/${project.value.title}`)
+
+const videoWidth = isMobile ? window.innerWidth - 40 : 800
+const videoHeight = isMobile ? videoWidth * 0.56 : 450
 
 onUpdated(() => window.scrollTo(0, 0))
 </script>
@@ -55,8 +58,8 @@ onUpdated(() => window.scrollTo(0, 0))
             ><v-img :src="getImageUrl(project?.image, `work/${project.title}`)"
           /></v-row>
           <v-row v-if="project?.video" :class="marginBottom"
-            ><video width="800" height="450" controls>
-              <source :src="project.video" type="video/mp4" />
+            ><video :width="videoWidth" :height="videoHeight" controls>
+              <source :src="getVideoUrl(project.video)" type="video/mp4" />
               Uw browser ondersteunt het video element niet.
             </video></v-row
           >

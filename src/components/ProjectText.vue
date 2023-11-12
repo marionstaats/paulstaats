@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { getAudioUrl } from '@/composables/getSrcURL'
+
 defineProps({
   subtitle: { type: String },
   text: { type: String },
@@ -23,7 +25,7 @@ defineProps({
     >
     <div v-if="music" class="d-flex justify-center">
       <audio controls>
-        <source :src="music" type="audio/mpeg" />
+        <source :src="getAudioUrl(music)" type="audio/mpeg" />
         Uw browser ondersteunt het audio element niet.
       </audio>
     </div>

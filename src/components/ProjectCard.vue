@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getImageUrl } from '@/composables/getImage'
+import { getImageUrl } from '@/composables/getSrcURL'
 
 defineEmits(['click'])
 
