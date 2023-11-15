@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import location from '@/assets/images/contact/locatie.jpeg'
+import location from '@/assets/images/contact/locatieWeusthagschool.jpg'
 import CoverImage from '@/components/CoverImage.vue'
 import { computed } from 'vue'
 import { isMobile } from '@/composables/isMobile'
