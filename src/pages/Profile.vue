@@ -10,11 +10,10 @@ const tab = ref(0)
 </script>
 
 <template>
-  <div>
+  <div class="profile-page">
     <CoverImage :images="[contact, bouwers, weusthag]" />
     <v-container>
       <v-tabs
-        style="height: 48px"
         slider-color="primary"
         v-model="tab"
         align-tabs="center"

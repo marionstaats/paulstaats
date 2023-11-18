@@ -14,11 +14,10 @@ const { dark } = storeToRefs(themeStore)
 <template>
   <div
     class="logo d-flex pa-3"
-    style="cursor: pointer"
     @click="() => router.push({ name: Routes.Home })"
   >
-    <v-img style="width: 100px" class="mr-4" :src="logo" />
-    <v-img style="width: 213px; top: 16px" v-if="dark" :src="signatureWhite" />
-    <v-img style="width: 213px; top: 16px" v-else :src="signatureBlack" />
+    <v-img class="mr-4 logo__image" :src="logo" />
+    <v-img class="logo__signature" v-if="dark" :src="signatureWhite" />
+    <v-img class="logo__signature" v-else :src="signatureBlack" />
   </div>
 </template>

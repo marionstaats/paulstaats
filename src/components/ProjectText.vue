@@ -13,7 +13,7 @@ defineProps({
 <template>
   <div>
     <h2 v-if="subtitle" class="mb-6">{{ subtitle }}</h2>
-    <div class="mb-6" style="white-space: pre-wrap">
+    <div class="project-text mb-6">
       {{ text }}
     </div>
     <a
