@@ -1,4 +1,7 @@
-@import './base.css';
+@import 'base';
+@import 'project';
+@import 'flipbook';
+@import 'carousel';
 
 .navigation {
     position: sticky;
@@ -45,88 +48,9 @@
     }
 }
 
-.flipbook {
-    width: 800px;
-    height: 450px;
-
-    &__right-triangle {
-        cursor: pointer;
-        position: absolute;
-        top: 410px;
-        left: 760px;
-        height: 40px;
-        width: 40px;
-    }
-
-    &__left-triangle {
-        cursor: pointer;
-        position: absolute;
-        top: 410px;
-        left: 0;
-        height: 40px;
-        width: 40px
-    }
-}
-
-.project-card {
-    transition: transform 10s;
-}
-
-.project-text {
-    white-space: pre-wrap;
-}
-
-.project-card:hover img {
-    transform: scale(1.1);
-}
-
-.project-share {
-    border-top: 2px solid rgb(var(--v-theme-primary));
-    border-bottom: 2px solid rgb(var(--v-theme-primary));
-    width: 100%;
-}
-
-.project-nav {
-    width: 100%;
-}
-
 a {
     color: rgb(var(--v-theme-text));
     text-decoration: none;
-}
-
-.slider-enter-active {
-    transition: transform 1s;
-}
-
-.slider-enter-from {
-    transform: translateY(-100%);
-}
-
-.slider-enter-to {
-    transform: translateY(0);
-}
-
-// Carousel transition speed
-.cover-image {
-    .v-window {
-        &-x-transition,
-        &-x-reverse-transition {
-            &-enter-active,
-            &-leave-active {
-                transition: 4s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
-            }
-        }
-    }
-}
-
-.v-carousel-item {
-    .v-responsive__content {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-    }
 }
 
 .cursor {
@@ -137,4 +61,17 @@ a {
     .v-tabs {
         height: 48px
     }
+}
+
+// Page switch
+.slider-enter-active {
+    transition: transform 1s;
+}
+
+.slider-enter-from {
+    transform: translateY(-100%);
+}
+
+.slider-enter-to {
+    transform: translateY(0);
 }

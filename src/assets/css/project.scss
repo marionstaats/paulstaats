@@ -1,0 +1,18 @@
+.project-card:hover img {
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+.project-text {
+    white-space: pre-wrap;
+}
+
+.project-share {
+    border-top: 2px solid rgb(var(--v-theme-primary));
+    border-bottom: 2px solid rgb(var(--v-theme-primary));
+    width: 100%;
+}
+
+.project-nav {
+    width: 100%;
+}

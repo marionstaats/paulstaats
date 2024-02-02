@@ -1,0 +1,21 @@
+// Carousel transition speed
+.cover-image {
+    .v-window {
+        &-x-transition,
+        &-x-reverse-transition {
+            &-enter-active,
+            &-leave-active {
+                transition: 4s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+            }
+        }
+    }
+}
+
+.v-carousel-item {
+    .v-responsive__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+}
