@@ -1,23 +1,33 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import type {PropType} from 'vue'
+import {ref} from 'vue'
 import ProjectCard from '@/components/ProjectCard.vue'
-import { workNav, WorkTypes } from '@/composables/navigation'
+import {workNav, WorkTypes} from '@/composables/navigation'
 import router from '@/router'
-import { Routes } from '@/router/routes'
-import type { Project } from '@/composables/projects'
-import { projects } from '@/composables/projects'
+import {Routes} from '@/router/routes'
+import type {Project} from '@/composables/projects'
+import {projects} from '@/composables/projects'
+import {isMobile} from "@/composables/isMobile";
+
+const props = defineProps({
+  content: { type: Object as PropType<WorkTypes> }
+})
 
 const tab = ref(null)
 
 const activeProjects = (workType: WorkTypes) =>
-  workType === WorkTypes.ALL
-    ? projects
-    : projects.filter((project: Project) => project.type.includes(workType))
+    props.content
+        ? props.content === WorkTypes.ALL
+            ? projects
+            : projects.filter((project: Project) => project.type.includes(props.content!))
+        : workType === WorkTypes.ALL
+            ? projects
+            : projects.filter((project: Project) => project.type.includes(workType))
 </script>
 
 <template>
   <v-container>
-    <v-tabs show-arrows slider-color="primary" v-model="tab" align-tabs="center">
+    <v-tabs v-if="!isMobile" show-arrows slider-color="primary" v-model="tab" align-tabs="center">
       <v-tab v-for="{ title } in workNav" :key="title" :value="title">{{ title }}</v-tab>
     </v-tabs>
     <v-window v-model="tab">

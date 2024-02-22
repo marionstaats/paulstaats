@@ -10,6 +10,7 @@ export type Navigation = {
   title: string | WorkTypes
   to?: Routes
   component?: Component
+  subNav?: Navigation[]
 }
 
 export enum WorkTypes {
@@ -20,20 +21,6 @@ export enum WorkTypes {
   SAME = 'EVENGOED'
 }
 
-export const mainNav: Navigation[] = [
-  {
-    title: 'WERK',
-    to: Routes.Work
-  },
-  {
-    title: 'PROFIEL',
-    to: Routes.Profile
-  },
-  {
-    title: 'CONTACT',
-    to: Routes.Contact
-  }
-]
 
 export const workNav: Navigation[] = [
   {
@@ -73,5 +60,22 @@ export const profileNav: Navigation[] = [
   {
     title: 'INSPIRATIE',
     component: Inspiration
+  }
+]
+
+export const mainNav: Navigation[] = [
+  {
+    title: 'WERK',
+    to: Routes.Work,
+    subNav: workNav,
+  },
+  {
+    title: 'PROFIEL',
+    to: Routes.Profile,
+    subNav: profileNav
+  },
+  {
+    title: 'CONTACT',
+    to: Routes.Contact
   }
 ]

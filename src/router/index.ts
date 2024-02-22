@@ -21,9 +21,12 @@ const router: Router = createRouter({
       component: Home
     },
     {
-      path: '/work',
+      path: '/work/:content?',
       name: Routes.Work,
-      component: Work
+      component: Work,
+      props: (route: RouteLocation) => ({
+        content: route.params.content
+      })
     },
     {
       path: '/project/:projectName',
@@ -34,9 +37,12 @@ const router: Router = createRouter({
       })
     },
     {
-      path: '/profile',
+      path: '/profile/:content?',
       name: Routes.Profile,
-      component: Profile
+      component: Profile,
+      props: (route: RouteLocation) => ({
+        content: route.params.content
+      })
     },
     {
       path: '/contact',
