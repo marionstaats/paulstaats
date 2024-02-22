@@ -14,7 +14,7 @@ const props = defineProps({
 
 const tab = ref(0)
 
-const getComponent = (component: Component) => {
+const getComponent = (component: Component | undefined) => {
   return props.content
     ? profileNav.find((nav) => nav.title === props.content)?.component
     : component
