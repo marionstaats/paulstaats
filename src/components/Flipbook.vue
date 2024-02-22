@@ -37,23 +37,12 @@ const flipLeft = (flipbook: any) => {
 </script>
 
 <template>
-  <flipbook
-    class="flipbook"
-    v-slot="flipbook"
-    singlePage
-    :pages="pages"
-  >
+  <flipbook class="flipbook" v-slot="flipbook" singlePage :pages="pages">
     <v-overlay modelValue contained persistent scrim="transparent">
-      <div
-        v-if="showRightTriangle"
-        class="flipbook__right-triangle"
-      >
+      <div v-if="showRightTriangle" class="flipbook__right-triangle">
         <v-img :src="triangle" @click="flipRight(flipbook)" />
       </div>
-      <div
-        v-if="!showRightTriangle"
-        class="flipbook__left-triangle"
-      >
+      <div v-if="!showRightTriangle" class="flipbook__left-triangle">
         <v-img :src="triangleLeft" @click="() => flipLeft(flipbook)" />
       </div> </v-overlay
   ></flipbook>

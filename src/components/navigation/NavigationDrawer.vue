@@ -7,8 +7,7 @@ defineProps({
 })
 defineEmits(['update:modelValue'])
 
-
-const navTitles = mainNav.map(nav => nav.title)
+const navTitles = mainNav.map((nav) => nav.title)
 </script>
 
 <template>
@@ -22,16 +21,16 @@ const navTitles = mainNav.map(nav => nav.title)
     <div class="navigation__content mt-2 d-flex flex-column justify-space-between">
       <v-list density="compact" nav>
         <v-list-item
-          v-for="({ title , to, subNav }, i) in mainNav"
+          v-for="({ title, to, subNav }, i) in mainNav"
           :key="i"
           :title="title"
           :to="{ name: to }"
           class="navigation__content__main"
-        ><v-list-item
-              v-for="({title: subTitle}, j) in subNav"
-              :key="j"
-              :title="subTitle.toLowerCase()"
-              :to="{ name: to, params: {content: subTitle} }"
+          ><v-list-item
+            v-for="({ title: subTitle }, j) in subNav"
+            :key="j"
+            :title="subTitle.toLowerCase()"
+            :to="{ name: to, params: { content: subTitle } }"
           ></v-list-item>
         </v-list-item>
       </v-list>

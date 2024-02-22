@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type {Component} from "vue";
-import {ref} from 'vue'
+import type { Component } from 'vue'
+import { ref } from 'vue'
 import { profileNav } from '@/composables/navigation'
 import contact from '@/assets/images/profile/contactPss.png'
 import bouwers from '@/assets/images/profile/foto stedebouwers.png'
 import weusthag from '@/assets/images/profile/Weusthagstr3-.jpg'
 import CoverImage from '@/components/CoverImage.vue'
-import {isMobile} from "@/composables/isMobile";
+import { isMobile } from '@/composables/isMobile'
 
 const props = defineProps({
   content: { type: String }
@@ -15,7 +15,9 @@ const props = defineProps({
 const tab = ref(0)
 
 const getComponent = (component: Component) => {
-  return props.content ? profileNav.find(nav => nav.title === props.content)?.component : component
+  return props.content
+    ? profileNav.find((nav) => nav.title === props.content)?.component
+    : component
 }
 </script>
 
@@ -23,13 +25,7 @@ const getComponent = (component: Component) => {
   <div class="profile-page">
     <CoverImage :images="[contact, bouwers, weusthag]" />
     <v-container>
-      <v-tabs
-          v-if="!isMobile"
-        slider-color="primary"
-        v-model="tab"
-        align-tabs="center"
-        show-arrows
-      >
+      <v-tabs v-if="!isMobile" slider-color="primary" v-model="tab" align-tabs="center" show-arrows>
         <v-tab v-for="({ title }, i) in profileNav" :key="i" :value="i">{{ title }}</v-tab>
       </v-tabs>
       <v-window v-model="tab">

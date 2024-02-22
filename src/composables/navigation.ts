@@ -21,7 +21,6 @@ export enum WorkTypes {
   SAME = 'EVENGOED'
 }
 
-
 export const workNav: Navigation[] = [
   {
     title: WorkTypes.ALL
@@ -67,7 +66,7 @@ export const mainNav: Navigation[] = [
   {
     title: 'WERK',
     to: Routes.Work,
-    subNav: workNav,
+    subNav: workNav
   },
   {
     title: 'PROFIEL',

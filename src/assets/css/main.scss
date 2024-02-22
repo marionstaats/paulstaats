@@ -4,89 +4,89 @@
 @import 'carousel';
 
 .navigation {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: rgba(var(--v-theme-background), 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(var(--v-theme-background), 0.8);
 
-    &__content {
-        height: calc(100vh - 100px);
+  &__content {
+    height: calc(100vh - 100px);
 
-        &__main {
-            .v-list-item-title {
-                padding-top: 5px;
-                padding-bottom: 5px;
-            }
+    &__main {
+      .v-list-item-title {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
 
-            a {
-                min-height: 30px !important;
-            }
+      a {
+        min-height: 30px !important;
+      }
 
-            .v-list-item {
-                padding-left: 30px;
-            }
-        }
+      .v-list-item {
+        padding-left: 30px;
+      }
     }
+  }
 }
 
 .logo {
-    cursor: pointer;
+  cursor: pointer;
 
-    &__image {
-        width: 100px;
-    }
+  &__image {
+    width: 100px;
+  }
 
-    &__signature {
-        width: 213px;
-        top: 16px;
-    }
+  &__signature {
+    width: 213px;
+    top: 16px;
+  }
 }
 
 .v-footer {
-    .logo {
-        img {
-            position: relative;
-            left: 16vw;
-        }
+  .logo {
+    img {
+      position: relative;
+      left: 16vw;
     }
+  }
 }
 
 .v-tab__slider {
-    bottom: -5px;
+  bottom: -5px;
 }
 
 .theme-switch {
-    .v-input__details {
-        padding: 0;
-        max-height: 0;
-        min-height: 0;
-    }
+  .v-input__details {
+    padding: 0;
+    max-height: 0;
+    min-height: 0;
+  }
 }
 
 a {
-    color: rgb(var(--v-theme-text));
-    text-decoration: none;
+  color: rgb(var(--v-theme-text));
+  text-decoration: none;
 }
 
 .cursor {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .profile-page {
-    .v-tabs {
-        height: 48px
-    }
+  .v-tabs {
+    height: 48px;
+  }
 }
 
 // Page switch
 .slider-enter-active {
-    transition: transform 1s;
+  transition: transform 1s;
 }
 
 .slider-enter-from {
-    transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 .slider-enter-to {
-    transform: translateY(0);
+  transform: translateY(0);
 }

@@ -12,10 +12,7 @@ const { dark } = storeToRefs(themeStore)
 </script>
 
 <template>
-  <div
-    class="logo d-flex pa-3"
-    @click="() => router.push({ name: Routes.Home })"
-  >
+  <div class="logo d-flex pa-3" @click="() => router.push({ name: Routes.Home })">
     <v-img class="mr-4 logo__image" :src="logo" />
     <v-img class="logo__signature" v-if="dark" :src="signatureWhite" />
     <v-img class="logo__signature" v-else :src="signatureBlack" />

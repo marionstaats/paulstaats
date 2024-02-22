@@ -13,5 +13,8 @@ const drawer = ref(false)
       <ThemeSwitch />
     </template>
   </v-app-bar>
-  <NavigationDrawer :modelValue="drawer" @update:modelValue="(value: boolean) => drawer = value" />
+  <NavigationDrawer
+    :modelValue="drawer"
+    @update:modelValue="(value: boolean) => (drawer = value)"
+  />
 </template>

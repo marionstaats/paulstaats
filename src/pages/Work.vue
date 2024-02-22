@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import type {PropType} from 'vue'
-import {ref} from 'vue'
+import type { PropType } from 'vue'
+import { ref } from 'vue'
 import ProjectCard from '@/components/ProjectCard.vue'
-import {workNav, WorkTypes} from '@/composables/navigation'
+import { workNav, WorkTypes } from '@/composables/navigation'
 import router from '@/router'
-import {Routes} from '@/router/routes'
-import type {Project} from '@/composables/projects'
-import {projects} from '@/composables/projects'
-import {isMobile} from "@/composables/isMobile";
+import { Routes } from '@/router/routes'
+import type { Project } from '@/composables/projects'
+import { projects } from '@/composables/projects'
+import { isMobile } from '@/composables/isMobile'
 
 const props = defineProps({
   content: { type: Object as PropType<WorkTypes> }
@@ -16,13 +16,13 @@ const props = defineProps({
 const tab = ref(null)
 
 const activeProjects = (workType: WorkTypes) =>
-    props.content
-        ? props.content === WorkTypes.ALL
-            ? projects
-            : projects.filter((project: Project) => project.type.includes(props.content!))
-        : workType === WorkTypes.ALL
-            ? projects
-            : projects.filter((project: Project) => project.type.includes(workType))
+  props.content
+    ? props.content === WorkTypes.ALL
+      ? projects
+      : projects.filter((project: Project) => project.type.includes(props.content!))
+    : workType === WorkTypes.ALL
+      ? projects
+      : projects.filter((project: Project) => project.type.includes(workType))
 </script>
 
 <template>
