@@ -18,6 +18,7 @@ const showRightTriangle = ref(true)
 const themeStore = useThemeStore()
 const triangle = computed(() => (themeStore.dark ? triangleRightBlack : triangleRightWhite))
 const triangleLeft = computed(() => (themeStore.dark ? triangleLeftBlack : triangleLeftWhite))
+
 const flipRight = (flipbook: any) => {
   flipbook.flipRight()
   currentPage.value += 1
@@ -25,6 +26,7 @@ const flipRight = (flipbook: any) => {
     showRightTriangle.value = false
   }
 }
+
 const flipLeft = (flipbook: any) => {
   flipbook.flipLeft()
   currentPage.value -= 1
@@ -41,7 +43,7 @@ const flipLeft = (flipbook: any) => {
     singlePage
     :pages="pages"
   >
-    <v-overlay :modelValue="true" contained persistent scrim="transparent">
+    <v-overlay modelValue contained persistent scrim="transparent">
       <div
         v-if="showRightTriangle"
         class="flipbook__right-triangle"

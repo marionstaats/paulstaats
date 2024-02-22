@@ -36,7 +36,7 @@ import Page from '@/components/Page.vue'
       </div>
     </template>
     <template v-slot:image>
-      <Flipbook :pages="[bandanalara, bandanakat, bandana1, bandana3, bandana4, bandana5]" />
+      <Flipbook :pages="[bandanalara, bandana1, bandana3, bandana4, bandana5, bandanakat]" />
     </template>
   </Page>
 </template>
