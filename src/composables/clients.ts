@@ -21,8 +21,8 @@ export const clients: Client[] = [
     description: 'Bestemmingsplan en inrichtingsplan, Brummen'
   },
   {
-    location: 'Scholte op Reimer',
-    description: 'Diverse Ruimtelijke onderbouwingen in Vasse en Ootmarsum'
+    location: 'Bouwbedrijf Scholte op Reimer',
+    description: 'Diverse Ruimtelijke onderbouwingen o.a. in Vasse en Ootmarsum'
   },
   {
     location: 'Gemeente Rheden',
@@ -30,7 +30,7 @@ export const clients: Client[] = [
   },
   {
     location: 'Particulier',
-    description: 'Ontwerp en advisering landgoed in gemeente Zevenaar'
+    description: 'Inrichtingsplan, bestemmingsplan en advisering Landgoed Huis te Lathum, Zevenaar'
   },
   {
     location: 'Gezondheidscentrum Hazenkamp',
@@ -53,8 +53,16 @@ export const clients: Client[] = [
     description: 'Massastudies Twello, Terwolde; plannen Dorpszicht en De Vecht'
   },
   {
+    location: 'Particulier',
+    description: 'Inrichtingsplan en advisering voor woningbouw Sint Janstraat 28, Keijenborg'
+  },
+  {
     location: 'Hurenkamp Architecten',
-    description: 'Ruimtelijke Onderbouwingen voor kantoortransformaties in Arnhem'
+    description: 'Ruimtelijke Onderbouwingen voor diverse kantoortransformaties in Arnhem'
+  },
+  {
+    location: 'Hurenkamp Architecten',
+    description: 'Bestemmingsplannen voor particuliere woningbouw oa Babberich, Stokkum en Braamt'
   },
   {
     location: 'Gemeente Arnhem',
@@ -81,6 +89,10 @@ export const clients: Client[] = [
     description: 'Burgerparticipatieproject in omgeving van Elst en Lent'
   },
   {
+    location: 'Architect Johan Senci',
+    description: 'Ruimtelijke Onderbouwing Nieuwstraat 2, Hengelo'
+  },
+  {
     location: 'Boerstal Bouw',
     description: 'Ruimtelijke Onderbouwing locatie Emmauskerk te ‘s-Heerenberg, Montferland'
   },
@@ -101,8 +113,12 @@ export const clients: Client[] = [
     description: 'Ruimtelijke Onderbouwingen voor kantoortransformaties, Arnhem en Zaandam'
   },
   {
+    location: 'Strategie Architecten',
+    description: 'Massastudies voor woningbouwontwikkelingen oa te Nijmegen en Wageningen'
+  },
+  {
     location: 'Stichting Huis Deelerwoud',
-    description: 'Landgoed Deelerwoud te Hoenderloo, Apeldoorn'
+    description: 'Toekomstvisie Landgoed Deelerwoud en locatiestudie te Hoenderloo, Apeldoorn'
   },
   {
     location: 'Architect Berenbroek',
@@ -125,20 +141,36 @@ export const clients: Client[] = [
     description: 'Gedetacheerd als stedebouwkundige'
   },
   {
+    location: 'Ontwikkelaar Vermeer Vastgoed',
+    description: 'Ruimtelijke Onderbouwingen kantoortransformaties oa in Zeist, Arnhem en Doetinchem'
+  },
+  {
+    location: 'Particulier',
+    description: 'Inrichtingsplan en advisering bestemmingsplan Wolfskuilseweg 254, Nijmegen'
+  },
+  {
     location: 'Loenderslootgroep',
     description: 'Inpassing Doorfietsroute F28 Amersfoort-Utrecht'
   },
   {
     location: 'Gemeente Lingewaard',
-    description: 'Massastudie voor ontwikkellocatie'
+    description: 'Massastudie voor ontwikkellocatie Haalderen-Bemmel'
+  },
+  {
+    location: 'Ontwikkelaar',
+    description: 'Inrichtingsplan buitenruimte Sophiaweg 51, Velp'
   },
   {
     location: 'Frans op den Bult',
     description: 'Bestemmingsplan Landgoed op den Bult in Deurningen, Dinkelland'
   },
   {
+    location: 'Particulier',
+    description: 'Advisering toekomstvisie De Vlietberg, Ooij'
+  },
+  {
     location: 'Ontwikkelaar',
-    description: 'Ruimtelijke Onderbouwing Centrum Zaandam'
+    description: 'Ruimtelijke Onderbouwing woningbouwcomplex De Tijdgeest, Zaandam'
   },
   {
     location: 'DAGnl',
@@ -152,6 +184,10 @@ export const clients: Client[] = [
   {
     location: 'Gemeente Steenwijkerland',
     description: 'Pilot Omgevingsplan Buitengebied'
+  },
+  {
+    location: 'Ontwikkelaar',
+    description: 'Massastudie stationsomgeving Hengelo'
   },
   {
     location: 'Gelders Genootschap',
