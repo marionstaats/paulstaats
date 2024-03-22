@@ -102,7 +102,7 @@ export const clients: Client[] = [
   },
   {
     location: 'Stichting Huis Deelerwoud',
-    description: 'Toekomstvisie Landgoed Deelerwoud te Hoenderloo, Apeldoorn'
+    description: 'Landgoed Deelerwoud te Hoenderloo, Apeldoorn'
   },
   {
     location: 'Architect Berenbroek',
@@ -126,7 +126,7 @@ export const clients: Client[] = [
   },
   {
     location: 'Loenderslootgroep',
-    description: 'Inpassing Snelfietsroute F28 Amersfoort-Utrecht'
+    description: 'Inpassing Doorfietsroute F28 Amersfoort-Utrecht'
   },
   {
     location: 'Gemeente Lingewaard',

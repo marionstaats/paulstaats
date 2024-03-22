@@ -1,5 +1,5 @@
-// Carousel transition speed
 .cover-image {
+  // Carousel transition speed
   .v-window {
     &-x-transition,
     &-x-reverse-transition {
@@ -9,6 +9,11 @@
         transition-delay: 2s;
       }
     }
+  }
+
+  h1 {
+    color: black;
+    font-weight: 600;
   }
 }
 

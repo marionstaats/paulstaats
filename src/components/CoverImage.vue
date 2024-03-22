@@ -16,7 +16,7 @@ const titleHeight = computed(() => (isMobile ? '30px' : '60px'))
   <div class="cover-image">
     <v-carousel interval="6999" cycle hide-delimiters :show-arrows="false" :height="height">
       <v-carousel-item v-for="(item, i) in images" :key="i" :src="item" eager cover
-        ><h1 v-if="title" style="color: white; font-weight: 600">
+        ><h1 v-if="title">
           {{ title }}
         </h1></v-carousel-item
       >
