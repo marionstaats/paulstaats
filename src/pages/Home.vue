@@ -12,13 +12,13 @@ import { isMobile } from '@/composables/isMobile'
   <div>
     <CoverImage
       :images="[dekkerswald, velp, snelfietsroute, terwolde, inrichtingsplan]"
-      :class="isMobile ? 'mb-2' : 'mb-8'"
+      :class="isMobile ? 'mb-2' : ''"
     />
     <v-container
-      ><h2 class="font-weight-bold">
-        Persoonlijk stedebouwkundig bureau voor opgaves in stad en land, veelzijdig door kennis,
-        ervaring en netwerk.
-      </h2></v-container
+      ><h1>
+        Persoonlijk stedebouwkundig bureau voor opgaves in stad en land,</h1>
+      <h1>veelzijdig door kennis, ervaring en netwerk.</h1>
+    </v-container
     >
   </div>
 </template>
