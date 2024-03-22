@@ -3,6 +3,9 @@ import bandana1 from '@/assets/images/profile/bandana1.jpg'
 import bandana3 from '@/assets/images/profile/bandana3.jpg'
 import bandana4 from '@/assets/images/profile/bandana4.jpg'
 import bandana5 from '@/assets/images/profile/bandana5.jpg'
+import bandana8 from '@/assets/images/profile/bandana8.jpg'
+import bandana9 from '@/assets/images/profile/bandana9.jpg'
+import bandana10 from '@/assets/images/profile/bandana10.jpg'
 import bandanalara from '@/assets/images/profile/bandanalara.jpeg'
 import bandanakat from '@/assets/images/profile/bandanakat.jpg'
 import Flipbook from '@/components/Flipbook.vue'
@@ -36,7 +39,7 @@ import Page from '@/components/Page.vue'
       </div>
     </template>
     <template v-slot:image>
-      <Flipbook :pages="[bandanalara, bandana1, bandana3, bandana4, bandana5, bandanakat]" />
+      <Flipbook :pages="[bandanalara, bandana1, bandana3, bandana4, bandana5, bandana8, bandana9, bandana10, bandanakat]" />
     </template>
   </Page>
 </template>
