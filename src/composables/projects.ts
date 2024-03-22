@@ -91,7 +91,7 @@ export const projects: Project[] = [
     subTitle: 'Gemeente Berg en Dal, Groesbeek   2008 - 2023',
     tekst: 'Vanaf de eerste ideevorming betrokken bij de transformatie van het oude zorginstituut Dekkerswald, gelegen tussen Nijmegen en Groesbeek. In circa 15 jaar vond een transformatie plaats naar een aantrekkelijk park met circa 250 woningen waar zorg naar wens wordt verleend. Met succes zijn een bestemmingsplan en een beeldkwaliteitsplan vastgesteld door de gemeenteraad. 80 % van de bebouwing op 20 ha grond wordt vervangen. Diverse inrichtingsplannen voor de publieke ruimtes zijn uitgevoerd. Belangrijke planfactoren zijn de ligging binnen een EHS-gebied, de monumenten en de gefaseerde ontwikkeling.' +
         '\n\nIn samenwerking met Fame Projectontwikkeling en OPG Landscape.',
-    link: 'http://paulstaats.com/wp-content/uploads/2018/04/Magazine-100-jaar-Dekkerswald.pdf',
+    link: 'Magazine-100-jaar-Dekkerswald.pdf',
     linkText: 'Link naar brochure',
     coverImage: 'Dekkerswaldgroot.jpg',
     image: 'Dekkerswald1.png',
@@ -118,6 +118,7 @@ export const projects: Project[] = [
     title: 'BUZZ',
     subTitle: 'Diverse gemeenten 2015 - 2020',
     text: 'Met Koen Vrielink en Merlijn Kamp werd samengewerkt onder de naam ‘Buzz’. Hierbij werd ingezet op het ontwikkelen van insectenboerderijen om de leegstand van agrarische panden tegen te gaan en ten gunste van een circulaire economie. Door een netwerk van specialisten kon op diverse vragen antwoord gegeven worden (bedrijfskundig, financieel, ecologisch, ruimtelijk en planologisch).',
+    link: 'flyer-buzz-150118.pdf',
     linkText: 'Link naar brochure',
     coverImage: 'buzzgroot.jpg',
     image: 'buzzklein.jpg',
