@@ -89,7 +89,7 @@ export const projects: Project[] = [
     type: [WorkTypes.URBANISM, WorkTypes.PLANNING, WorkTypes.OUTSIDE],
     title: 'Supervisie Park Dekkerswald',
     subTitle: 'Gemeente Berg en Dal, Groesbeek   2008 - 2023',
-    tekst: 'Vanaf de eerste ideevorming betrokken bij de transformatie van het oude zorginstituut Dekkerswald, gelegen tussen Nijmegen en Groesbeek. In circa 15 jaar vond een transformatie plaats naar een aantrekkelijk park met circa 250 woningen waar zorg naar wens wordt verleend. Met succes zijn een bestemmingsplan en een beeldkwaliteitsplan vastgesteld door de gemeenteraad. 80 % van de bebouwing op 20 ha grond wordt vervangen. Diverse inrichtingsplannen voor de publieke ruimtes zijn uitgevoerd. Belangrijke planfactoren zijn de ligging binnen een EHS-gebied, de monumenten en de gefaseerde ontwikkeling.' +
+    text: 'Vanaf de eerste ideevorming betrokken bij de transformatie van het oude zorginstituut Dekkerswald, gelegen tussen Nijmegen en Groesbeek. In circa 15 jaar vond een transformatie plaats naar een aantrekkelijk park met circa 250 woningen waar zorg naar wens wordt verleend. Met succes zijn een bestemmingsplan en een beeldkwaliteitsplan vastgesteld door de gemeenteraad. 80 % van de bebouwing op 20 ha grond wordt vervangen. Diverse inrichtingsplannen voor de publieke ruimtes zijn uitgevoerd. Belangrijke planfactoren zijn de ligging binnen een EHS-gebied, de monumenten en de gefaseerde ontwikkeling.' +
         '\n\nIn samenwerking met Fame Projectontwikkeling en OPG Landscape.',
     link: 'Magazine-100-jaar-Dekkerswald.pdf',
     linkText: 'Link naar brochure',
@@ -103,6 +103,7 @@ export const projects: Project[] = [
     subTitle: 'Gemeente Enschede 2016',
     text: 'Met het samenwerkingsverband ‘Innovare’ is deelgenomen aan een prijsvraag voor een innovatief pad van het NS-station naar de Universiteit Twente. Met een nieuwe visie voor het Kennispark en meerdere attractiepunten langs het pad werd een nieuw aantrekkelijk beeld geschetst. De visie was gebaseerd op twee hoofdlijnen: “Co-creatie & open innovatie”; door het actief betrekken van innovatieve stakeholders en een ‘Groene draad’. In samenwerking met Krinkels, André Bijkerk, Simon Huiskamp, Jankees Klapwijk en 100% FAT.',
     coverImage: 'Kennisparkgroot.jpg',
+    image: '',
     flipbookImages: ['Kennispark1.jpg', 'Kennispark2.jpg', 'logo-Innovare-1.png'],
   },
   {
