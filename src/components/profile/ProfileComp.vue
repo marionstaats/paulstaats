@@ -10,6 +10,11 @@ import bandanalara from '@/assets/images/profile/bandanalara.jpeg'
 import bandanakat from '@/assets/images/profile/bandanakat.jpg'
 import Flipbook from '@/components/Flipbook.vue'
 import Page from '@/components/Page.vue'
+import { ref } from 'vue'
+import { useElementSize } from '@vueuse/core'
+
+const imageRef = ref(null)
+const { width, height } = useElementSize(imageRef)
 </script>
 
 <template>
@@ -39,7 +44,23 @@ import Page from '@/components/Page.vue'
       </div>
     </template>
     <template v-slot:image>
-      <Flipbook :pages="[bandanalara, bandana1, bandana3, bandana4, bandana5, bandana8, bandana9, bandana10, bandanakat]" />
+      <div ref="imageRef">
+        <Flipbook
+          :pages="[
+            bandanalara,
+            bandana1,
+            bandana3,
+            bandana4,
+            bandana5,
+            bandana8,
+            bandana9,
+            bandana10,
+            bandanakat
+          ]"
+          :imageHeight="height"
+          :imageWidth="width"
+        />
+      </div>
     </template>
   </Page>
 </template>

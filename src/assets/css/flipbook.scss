@@ -1,22 +1,11 @@
 .flipbook {
-  width: 800px;
-  height: 450px;
-
   &__right-triangle {
     cursor: pointer;
     position: absolute;
-    top: 410px;
-    left: 760px;
-    height: 40px;
-    width: 40px;
   }
 
   &__left-triangle {
     cursor: pointer;
     position: absolute;
-    top: 410px;
-    left: 0;
-    height: 40px;
-    width: 40px;
   }
 }

@@ -1,5 +1,5 @@
-import type {WorkTypes as WorkTypesType} from '@/composables/navigation'
-import {WorkTypes} from '@/composables/navigation'
+import type { WorkTypes as WorkTypesType } from '@/composables/navigation'
+import { WorkTypes } from '@/composables/navigation'
 
 export type Project = {
   type: WorkTypesType[]
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     subTitle: 'Gemeente Voorst – Terwolde  2016',
     text: 'Ontwerp en flyermateriaal van een woonwijk voor maximaal 30 woningen, ten zuiden van het dorp Terwolde. De opgave was om op deze mooie locatie, met geluidhinder, een flexibel plan met ruimtelijke kwaliteit te creëren. Het wegenpatroon en bouwmassa’s spelen in op bestaande bebouwing en landschap; hemelwater wordt opgevangen in wadi’s. Realisatie vanaf 2018.',
     coverImage: '',
-    image: '',
+    image: ''
   },
   {
     type: [WorkTypes.PLANNING, WorkTypes.OUTSIDE],
@@ -74,28 +74,30 @@ export const projects: Project[] = [
     text: 'Bezitters van een potentiële bouwkavel worden geholpen met een principeverzoek naar de gemeente, een inrichtingsplan, coördinatie van technische onderzoeken en het opstellen van een compleet bestemmingsplan of ruimtelijke onderbouwing.',
     coverImage: 'WensinkZuidGroot.jpg',
     image: 'WensinkZuid1.jpg',
-    flipbookImages: ['WensinkZuid2.jpg', 'WensinkZuid3.jpg'],
+    flipbookImages: ['WensinkZuid2.jpg', 'WensinkZuid3.jpg']
   },
   {
     type: [WorkTypes.PLANNING],
     title: 'Ruimtelijke Onderbouwingen - transformaties tbv woningen',
     subTitle: 'Gemeenten Arnhem, Nijmegen, Zeist, Den Haag, Nijverdal, Hengelo. 2013 – heden',
-    text: 'In samenwerking met diverse architectenbureaus, zoals Riel Berenbroek, StrategieArchitecten en HurenkampArchitecten, zijn veel Ruimtelijke Onderbouwingen opgesteld voor Omgevingsvergunningen. Veel kantoren zijn getransformeerd, vaak met kleine appartementen voor jongeren en ouderen.' +
-        '\n\nVoorbeelden: Arnhem: Bergstraat, Zeelandsingel, Kroonpark, Gele Rijdersplein en Velperplein. Zeist: Utrechtseweg. Hengelo: Nieuwstraat. Den Haag: Fruitweg. Nijmegen: Tweede Oude Heselaan en Oranjesingel.',
+    text:
+      'In samenwerking met diverse architectenbureaus, zoals Riel Berenbroek, StrategieArchitecten en HurenkampArchitecten, zijn veel Ruimtelijke Onderbouwingen opgesteld voor Omgevingsvergunningen. Veel kantoren zijn getransformeerd, vaak met kleine appartementen voor jongeren en ouderen.' +
+      '\n\nVoorbeelden: Arnhem: Bergstraat, Zeelandsingel, Kroonpark, Gele Rijdersplein en Velperplein. Zeist: Utrechtseweg. Hengelo: Nieuwstraat. Den Haag: Fruitweg. Nijmegen: Tweede Oude Heselaan en Oranjesingel.',
     coverImage: '',
-    image: '',
+    image: ''
   },
   {
     type: [WorkTypes.URBANISM, WorkTypes.PLANNING, WorkTypes.OUTSIDE],
     title: 'Supervisie Park Dekkerswald',
     subTitle: 'Gemeente Berg en Dal, Groesbeek   2008 - 2023',
-    text: 'Vanaf de eerste ideevorming betrokken bij de transformatie van het oude zorginstituut Dekkerswald, gelegen tussen Nijmegen en Groesbeek. In circa 15 jaar vond een transformatie plaats naar een aantrekkelijk park met circa 250 woningen waar zorg naar wens wordt verleend. Met succes zijn een bestemmingsplan en een beeldkwaliteitsplan vastgesteld door de gemeenteraad. 80 % van de bebouwing op 20 ha grond wordt vervangen. Diverse inrichtingsplannen voor de publieke ruimtes zijn uitgevoerd. Belangrijke planfactoren zijn de ligging binnen een EHS-gebied, de monumenten en de gefaseerde ontwikkeling.' +
-        '\n\nIn samenwerking met Fame Projectontwikkeling en OPG Landscape.',
+    text:
+      'Vanaf de eerste ideevorming betrokken bij de transformatie van het oude zorginstituut Dekkerswald, gelegen tussen Nijmegen en Groesbeek. In circa 15 jaar vond een transformatie plaats naar een aantrekkelijk park met circa 250 woningen waar zorg naar wens wordt verleend. Met succes zijn een bestemmingsplan en een beeldkwaliteitsplan vastgesteld door de gemeenteraad. 80 % van de bebouwing op 20 ha grond wordt vervangen. Diverse inrichtingsplannen voor de publieke ruimtes zijn uitgevoerd. Belangrijke planfactoren zijn de ligging binnen een EHS-gebied, de monumenten en de gefaseerde ontwikkeling.' +
+      '\n\nIn samenwerking met Fame Projectontwikkeling en OPG Landscape.',
     link: 'Magazine-100-jaar-Dekkerswald.pdf',
     linkText: 'Link naar brochure',
     coverImage: 'Dekkerswaldgroot.jpg',
     image: 'Dekkerswald1.png',
-    flipbookImages: ['Dekkerswald2.png', 'Dekkerswald3.png', 'Dekkerswald4.png'],
+    flipbookImages: ['Dekkerswald2.png', 'Dekkerswald3.png', 'Dekkerswald4.png']
   },
   {
     type: [WorkTypes.PLANNING, WorkTypes.SAME],
@@ -104,15 +106,15 @@ export const projects: Project[] = [
     text: 'Met het samenwerkingsverband ‘Innovare’ is deelgenomen aan een prijsvraag voor een innovatief pad van het NS-station naar de Universiteit Twente. Met een nieuwe visie voor het Kennispark en meerdere attractiepunten langs het pad werd een nieuw aantrekkelijk beeld geschetst. De visie was gebaseerd op twee hoofdlijnen: “Co-creatie & open innovatie”; door het actief betrekken van innovatieve stakeholders en een ‘Groene draad’. In samenwerking met Krinkels, André Bijkerk, Simon Huiskamp, Jankees Klapwijk en 100% FAT.',
     coverImage: 'Kennisparkgroot.jpg',
     image: '',
-    flipbookImages: ['Kennispark1.jpg', 'Kennispark2.jpg', 'logo-Innovare-1.png'],
+    flipbookImages: ['Kennispark1.jpg', 'Kennispark2.jpg', 'logo-Innovare-1.png']
   },
   {
     type: [WorkTypes.PLANNING, WorkTypes.SAME],
-      title: 'PlanCaravan',
-      subTitle: 'Diverse gemeenten 2014 - 2018',
-      text: 'Met planoloog Tim Strikers is in diverse parken en op pleinen gesproken met genodigden en voorbijgangers. Als laagdrempelige participatie werden de bewoners van de buurt bevraagd naar de wensen en zorgen voor de leefomgeving. Schetsontwerpen werden besproken en kinderen konden zich uiten met stiften en maquettes. De ‘PlanCaravan’ met tafels en vaandels vormde een leuke uitnodiging voor een goed gesprek. Met een verslag, cartoons en videobeelden, kon de opdrachtgever plannen uitwerken of bijstellen.',
-      coverImage: '',
-      image: '',
+    title: 'PlanCaravan',
+    subTitle: 'Diverse gemeenten 2014 - 2018',
+    text: 'Met planoloog Tim Strikers is in diverse parken en op pleinen gesproken met genodigden en voorbijgangers. Als laagdrempelige participatie werden de bewoners van de buurt bevraagd naar de wensen en zorgen voor de leefomgeving. Schetsontwerpen werden besproken en kinderen konden zich uiten met stiften en maquettes. De ‘PlanCaravan’ met tafels en vaandels vormde een leuke uitnodiging voor een goed gesprek. Met een verslag, cartoons en videobeelden, kon de opdrachtgever plannen uitwerken of bijstellen.',
+    coverImage: '',
+    image: ''
   },
   {
     type: [WorkTypes.PLANNING, WorkTypes.SAME],
@@ -122,7 +124,7 @@ export const projects: Project[] = [
     link: 'flyer-buzz-150118.pdf',
     linkText: 'Link naar brochure',
     coverImage: 'buzzgroot.jpg',
-    image: 'buzzklein.jpg',
+    image: 'buzzklein.jpg'
   },
   {
     type: [WorkTypes.OUTSIDE],
@@ -131,7 +133,7 @@ export const projects: Project[] = [
     text: 'Het straatmeubilair kan de bekroning zijn van een herinrichting van de buitenruimte. Zo kreeg de Veerstoep van de IJssel in Dieren-Zuid een nieuwe uitkijkpost over de IJssel. En het kantoor van ZZG-zorggroep op Park Dekkerswald een aangename lunchplek.',
     coverImage: 'Veerstoepgroot.jpg',
     image: 'Veerstoep1.png',
-    flipbookImages: ['Veerstoep2.png', 'Veerstoep3.png', 'Veerstoep4.png'],
+    flipbookImages: ['Veerstoep2.png', 'Veerstoep3.png', 'Veerstoep4.png']
   },
   {
     type: [WorkTypes.PLANNING],
@@ -139,7 +141,7 @@ export const projects: Project[] = [
     subTitle: 'Gemeenten Rheden. 2004 - 2007',
     text: 'De gemeente Rheden was één van eerste gemeenten van Nederland die overgingen op een standaardisatie van bestemmingsplannen. Circa 160 verouderde bestemmingsplannen werden vervangen door 11 digitaal raadpleegbare plannen. Als stedebouwkundige van de gemeente bijgedragen aan een eenduidige tekenwijze, redactie van de plannen en heldere communicatie.',
     coverImage: '',
-    image: '',
+    image: ''
   },
   {
     type: [WorkTypes.PLANNING],
@@ -155,7 +157,7 @@ export const projects: Project[] = [
     subTitle: 'Hengelo. 2013-2014',
     text: 'Met Natascha Vos, Agnes Booijink en diverse hulpkrachten werd 9 maanden een tijdelijke winkel opengehouden in de binnenstad van Hengelo, Marktstraat 15. Naast verkoop van 2e-hands design en retro-materiaal werden er cursussen en optredens gegeven. Met het project werd een experiment gedaan om meer reuring in de binnenstad te brengen en een andere manier van winkelvoering.',
     coverImage: '',
-    image: '',
+    image: ''
   },
   {
     type: [WorkTypes.SAME],
@@ -163,7 +165,7 @@ export const projects: Project[] = [
     subTitle: 'Diepenheim  217',
     text: 'Met fotograaf-kunstenaar Agnes Booijink deelgenomen aan ‘Het Kunstmoment’ met als thema ‘Landschatten’ van de ‘Kunstvereniging Diepenheim’. Het rosarium in het centrum vormde de inspiratie om drie locaties te verfraaien. In het centrum van de stad was een feest gemaakt van een grote tafel. Op het Schuttersveld stond een installatie van een huiselijk tafereel met tafel en stoelen. Zijn we binnen of buiten? Waar eindigt de natuur en begint de cultuur? In het open veld lagen 60 rozen in het gras, als breekbare aankondiging van het culturele leven. Het ‘mooimaken’ is een oude Twentse traditie.',
     coverImage: '',
-    image: '',
+    image: ''
   },
   {
     type: [WorkTypes.PLANNING],
@@ -171,7 +173,7 @@ export const projects: Project[] = [
     subTitle: 'Gemeente Dinkelland – Deurningen  2017',
     text: 'In opdracht van de horecaonderneming Frans op den Bult is een bestemmingsplan opgesteld voor het achterliggende bosperceel. Naar ontwerp van landschapsarchitect André Bijkerk is in 2018 een park met extra parkeren gerealiseerd.',
     coverImage: '',
-    image: '',
+    image: ''
   },
   {
     type: [WorkTypes.OUTSIDE],
@@ -179,7 +181,7 @@ export const projects: Project[] = [
     subTitle: 'Arnhem 2006',
     text: 'Als ouder van twee schoolkinderen het schoolplein ontworpen en de uitvoering begeleid.',
     coverImage: '',
-    image: '',
+    image: ''
   },
   {
     type: [WorkTypes.OUTSIDE],
@@ -187,15 +189,16 @@ export const projects: Project[] = [
     subTitle: 'Arnhem 2009',
     text: 'Als stedebouwkundige verantwoordelijk voor het ontwerp en uitvoeringsbegeleiding van de buitenruimtes van de gebouwen van Insula Dei. Drie pleinen en een parkeerplaats ondergingen een metamorfose. De hoogteverschillen in het terrein en de diversiteit van de gebouwen vormden een uitdaging. In samenwerking met Harm Post.',
     coverImage: '',
-    image: '',
+    image: ''
   },
   {
     type: [WorkTypes.URBANISM, WorkTypes.PLANNING, WorkTypes.OUTSIDE],
     title: 'Erftransformaties voor woningbouw',
     subTitle: 'Diverse gemeenten  2013 – heden',
-    text: 'Voor verschillende bedrijven met veel ruimte zijn erftransformaties ontworpen. Het karakter van de plek bleef gespaard of werd juist versterkt, terwijl er ruimte kwam voor nieuwe woningen. Een inrichtings- en beeldkwaliteitsplan horen standaard bij het plan.' +
-        '\n\nVoorbeelden: Warnsveld: Lochemseweg. Nijmegen: Wolfskuilseweg. Doetinchem: Lubberslaan.’ Keijenborg: Sint Janstraat.',
+    text:
+      'Voor verschillende bedrijven met veel ruimte zijn erftransformaties ontworpen. Het karakter van de plek bleef gespaard of werd juist versterkt, terwijl er ruimte kwam voor nieuwe woningen. Een inrichtings- en beeldkwaliteitsplan horen standaard bij het plan.' +
+      '\n\nVoorbeelden: Warnsveld: Lochemseweg. Nijmegen: Wolfskuilseweg. Doetinchem: Lubberslaan.’ Keijenborg: Sint Janstraat.',
     coverImage: '',
-    image: '',
+    image: ''
   }
 ]

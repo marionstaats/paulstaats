@@ -142,7 +142,8 @@ export const clients: Client[] = [
   },
   {
     location: 'Ontwikkelaar Vermeer Vastgoed',
-    description: 'Ruimtelijke Onderbouwingen kantoortransformaties oa in Zeist, Arnhem en Doetinchem'
+    description:
+      'Ruimtelijke Onderbouwingen kantoortransformaties oa in Zeist, Arnhem en Doetinchem'
   },
   {
     location: 'Particulier',

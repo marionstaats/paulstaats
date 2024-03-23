@@ -8,7 +8,8 @@ import CoverImage from '@/components/CoverImage.vue'
 import { projects } from '@/composables/projects'
 import { isMobile } from '@/composables/isMobile'
 import { getImageUrl, getVideoUrl } from '@/composables/getSrcURL'
-import { computed, onUpdated } from 'vue'
+import { computed, onUpdated, ref } from 'vue'
+import { useElementSize } from '@vueuse/core'
 
 const props = defineProps({
   projectName: { type: String, required: true }
@@ -21,6 +22,9 @@ const projectIndex = computed(() =>
   projects.findIndex((project) => project.title === props.projectName)
 )
 const project = computed(() => projects[projectIndex.value])
+
+const imageRef = ref(null)
+const { width, height } = useElementSize(imageRef)
 
 const flipBookImagesUrl = computed(() =>
   project.value?.flipbookImages?.map((image: string) =>
@@ -43,7 +47,7 @@ onUpdated(() => window.scrollTo(0, 0))
       :class="isMobile ? 'mb-2' : 'mb-8'"
     />
     <Page>
-      <template v-slot:text>
+      <template #text>
         <ProjectText
           :subtitle="project?.subTitle"
           :text="project?.text"
@@ -52,10 +56,10 @@ onUpdated(() => window.scrollTo(0, 0))
           :audio="project?.music"
         />
       </template>
-      <template v-slot:image>
+      <template #image>
         <div>
           <v-row :class="marginBottom"
-            ><v-img :src="getImageUrl(project?.image, `work/${project.title}`)"
+            ><v-img ref="imageRef" :src="getImageUrl(project?.image, `work/${project.title}`)"
           /></v-row>
           <v-row v-if="project?.video" :class="marginBottom"
             ><video :width="videoWidth" :height="videoHeight" controls>
@@ -64,11 +68,11 @@ onUpdated(() => window.scrollTo(0, 0))
             </video></v-row
           >
           <v-row v-if="project?.flipbookImages" :class="marginBottom"
-            ><Flipbook :pages="flipBookImagesUrl"
+            ><Flipbook :pages="flipBookImagesUrl" :imageHeight="height" :imageWidth="width"
           /></v-row>
         </div>
       </template>
-      <template v-slot:footer
+      <template #footer
         ><v-row :class="marginFooter"><Sharing /></v-row>
         <v-row :class="marginFooter"><ProjectNavigation :index="projectIndex" /></v-row
       ></template>
